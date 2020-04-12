@@ -1,0 +1,1 @@
+I'm expecting a 9/10 on the entirety of lab 9. ecnryption is entirely functional (5/5 for the first week). But, for week 2, the decryption works perfectly, but, I cannot produce the correct result for consecutive extries.

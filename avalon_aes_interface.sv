@@ -1,0 +1,259 @@
+/************************************************************************
+Avalon-MM Interface for AES Decryption IP Core
+
+Dong Kai Wang, Fall 2017
+
+For use with ECE 385 Experiment 9
+University of Illinois ECE Department
+
+Register Map:
+
+ 0-3 : 4x 32bit AES Key
+ 4-7 : 4x 32bit AES Encrypted Message
+ 8-11: 4x 32bit AES Decrypted Message
+   12: Not Used
+	13: Not Used
+   14: 32bit Start Register
+   15: 32bit Done Register
+
+************************************************************************/
+
+
+module avalon_aes_interface (
+	// Avalon Clock Input
+	input logic CLK,
+	
+	// Avalon Reset Input
+	input logic RESET,
+	
+	// Avalon-MM Slave Signals
+	input  logic AVL_READ,					// Avalon-MM Read
+	input  logic AVL_WRITE,					// Avalon-MM Write
+	input  logic AVL_CS,						// Avalon-MM Chip Select
+	input  logic [3:0] AVL_BYTE_EN,		// Avalon-MM Byte Enable
+	input  logic [3:0] AVL_ADDR,			// Avalon-MM Address
+	input  logic [31:0] AVL_WRITEDATA,	// Avalon-MM Write Data
+	output logic [31:0] AVL_READDATA,	// Avalon-MM Read Data
+	
+	// Exported Conduit
+	output logic [31:0] EXPORT_DATA		// Exported Conduit Signal to LEDs
+	);
+	
+	
+	//assign EXPORT_DATA = 32'b11111111111111111111111111111111;
+
+	
+	logic [127:0] AES_KEY;
+	logic [127:0] AES_MSG_EN;
+	logic [127:0] AES_MSG_DE;
+	logic [127:0] AES_MSG_DE_R;
+	logic [31:0] DONE;
+	logic [31:0] start_, done_;
+	logic [15:0] load_en;
+	// temp?
+	logic myReset;
+	logic [3:0] ones;
+		
+		
+	AES A(
+				.CLK(CLK),
+				.RESET(RESET),
+				.myReset(myReset),
+				.AES_START(start_),
+				.AES_DONE(done_),
+				.AES_KEY({AES_KEY[31:0], AES_KEY[63:32], AES_KEY[95:64], AES_KEY[127:96]}),
+				.AES_MSG_ENC({AES_MSG_EN[31:0], AES_MSG_EN[63:32], AES_MSG_EN[95:64], AES_MSG_EN[127:96]}),
+				.AES_MSG_DEC(AES_MSG_DE)
+	);
+	
+	always_comb
+		begin
+		load_en = 16'b0000000000000000;
+		if(done_)
+			begin
+				load_en[15] = 1'b1;
+				load_en[11:8] = 4'b1111;
+			end
+		if(AVL_WRITE && AVL_CS)
+			begin 
+				case(AVL_ADDR)
+					4'b0000:
+						load_en[0] = 1'b1;
+					4'b0001:
+						load_en[1] = 1'b1;
+					4'b0010:
+						load_en[2] = 1'b1;
+					4'b0011:
+						load_en[3] = 1'b1;
+					4'b0100:
+						load_en[4] = 1'b1;
+					4'b0101:
+						load_en[5] = 1'b1;
+					4'b0110:
+						load_en[6] = 1'b1;
+					4'b0111:
+						load_en[7] = 1'b1;
+					4'b1110:
+						load_en[14] = 1'b1;
+					default: ;
+				endcase
+			end
+		end
+						
+			
+	
+	always_comb 
+		begin 
+		AVL_READDATA = 8'h00000000;
+		if (AVL_READ && AVL_CS)
+			begin
+				case(AVL_ADDR)
+					4'b0000:
+						AVL_READDATA = AES_KEY[31:0];
+					4'b0001:
+						AVL_READDATA = AES_KEY[63:32];
+					4'b0010:
+						AVL_READDATA = AES_KEY[95:64];
+					4'b0011:
+						AVL_READDATA = AES_KEY[127:96];
+					4'b0100:
+						AVL_READDATA = AES_MSG_EN[31:0];
+					4'b0101:
+						AVL_READDATA = AES_MSG_EN[63:32];
+					4'b0110:
+						AVL_READDATA = AES_MSG_EN[95:64];
+					4'b0111:
+						AVL_READDATA = AES_MSG_EN[127:96];
+					4'b1000:
+						AVL_READDATA = AES_MSG_DE[127:96];
+					4'b1001:
+						AVL_READDATA = AES_MSG_DE[95:64];
+					4'b1010:
+						AVL_READDATA = AES_MSG_DE[63:32];
+					4'b1011:
+						AVL_READDATA = AES_MSG_DE[31:0];
+					4'b1110:
+						AVL_READDATA = start_;
+					4'b1111:
+						AVL_READDATA = DONE;
+					default:
+						AVL_READDATA = 8'h00000000;
+				endcase
+			end
+
+		end
+
+/*
+	always_comb
+	begin 
+		load_en[15] = 1'b0;
+		if(done_)
+			load_en[15] = 1'b1;
+	end
+*/	
+
+	register32 aes_key0 (.Clk(CLK), 
+								.Reset(RESET | myReset), 
+								.load_enable(load_en[0]), 
+								.avl_byte_en(AVL_BYTE_EN), 
+								.Din(AVL_WRITEDATA), 
+								.Dout(AES_KEY[31:0])
+	);	
+	register32 aes_key1 (.Clk(CLK), 
+								.Reset(RESET | myReset), 
+								.load_enable(load_en[1]), 
+								.avl_byte_en(AVL_BYTE_EN), 
+								.Din(AVL_WRITEDATA), 
+								.Dout(AES_KEY[63:32])
+	);
+	register32 aes_key2 (.Clk(CLK), 
+								.Reset(RESET | myReset), 
+								.load_enable(load_en[2]), 
+								.avl_byte_en(AVL_BYTE_EN), 
+								.Din(AVL_WRITEDATA), 
+								.Dout(AES_KEY[95:64])
+	);
+	register32 aes_key3 (.Clk(CLK), 
+								.Reset(RESET | myReset), 
+								.load_enable(load_en[3]), 
+								.avl_byte_en(AVL_BYTE_EN), 
+								.Din(AVL_WRITEDATA), 
+								.Dout(AES_KEY[127:96])
+	);
+	register32 aes_msg_en0 (.Clk(CLK), 
+								.Reset(RESET | myReset), 
+								.load_enable(load_en[4]), 
+								.avl_byte_en(AVL_BYTE_EN), 
+								.Din(AVL_WRITEDATA), 
+								.Dout(AES_MSG_EN[31:0])
+	);
+	register32 aes_msg_en1 (.Clk(CLK), 
+								.Reset(RESET | myReset), 
+								.load_enable(load_en[5]), 
+								.avl_byte_en(AVL_BYTE_EN), 
+								.Din(AVL_WRITEDATA), 
+								.Dout(AES_MSG_EN[63:32])
+	);
+	register32 aes_msg_en2 (.Clk(CLK), 
+								.Reset(RESET | myReset), 
+								.load_enable(load_en[6]), 
+								.avl_byte_en(AVL_BYTE_EN), 
+								.Din(AVL_WRITEDATA), 
+								.Dout(AES_MSG_EN[95:64])
+	);
+	register32 aes_msg_en3 (.Clk(CLK), 
+								.Reset(RESET | myReset), 
+								.load_enable(load_en[7]), 
+								.avl_byte_en(AVL_BYTE_EN), 
+								.Din(AVL_WRITEDATA), 
+								.Dout(AES_MSG_EN[127:96])
+	);
+	register32 aes_msg_de0 (.Clk(CLK), 
+								.Reset(RESET | myReset), 
+								.load_enable(load_en[8]), 
+								.avl_byte_en(ones), 
+								.Din(AES_MSG_DE[31:0]), 
+								.Dout(AES_MSG_DE_R[31:0])
+	);
+	register32 aes_msg_de1 (.Clk(CLK), 
+								.Reset(RESET | myReset), 
+								.load_enable(load_en[9]), 
+								.avl_byte_en(ones), 
+								.Din(AES_MSG_DE[63:32]), 
+								.Dout(AES_MSG_DE_R[63:32])
+	);
+	register32 aes_msg_de2 (.Clk(CLK), 
+								.Reset(RESET | myReset), 
+								.load_enable(load_en[10]), 
+								.avl_byte_en(ones), 
+								.Din(AES_MSG_DE[95:64]), 
+								.Dout(AES_MSG_DE_R[95:64])
+	);
+	register32 aes_msg_de3 (.Clk(CLK), 
+								.Reset(RESET | myReset), 
+								.load_enable(load_en[11]), 
+								.avl_byte_en(4'b1111), 
+								.Din(AES_MSG_DE[127:96]), 
+								.Dout(AES_MSG_DE_R[127:96])
+	);
+	register32 start     (.Clk(CLK), 
+								.Reset(RESET | myReset), 
+								.load_enable(load_en[14]), 
+								.avl_byte_en(ones), 
+								.Din(AVL_WRITEDATA), 
+								.Dout(start_)
+	);
+	register32 done      (.Clk(CLK), 
+								.Reset(RESET), 
+								.load_enable(load_en[15]), 
+								.avl_byte_en(ones), 
+								.Din(done_), 
+								.Dout(DONE)
+	);
+	
+	assign ones = 4'b1111;
+	assign EXPORT_DATA = {AES_KEY[31:16], AES_KEY[111:96]};
+
+endmodule
+
+

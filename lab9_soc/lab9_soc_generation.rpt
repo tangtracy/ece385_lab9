@@ -1,0 +1,198 @@
+Info: Starting: Create block symbol file (.bsf)
+Info: qsys-generate /home/tracytang/Documents/ece385/lab9/lab9_soc.qsys --block-symbol-file --output-directory=/home/tracytang/Documents/ece385/lab9/lab9_soc --family="Cyclone IV E" --part=EP4CE115F29C7
+Progress: Loading lab9/lab9_soc.qsys
+Progress: Reading input file
+Progress: Adding AES_Decryption_Core_0 [AES_Decryption_Core 1.0]
+Progress: Parameterizing module AES_Decryption_Core_0
+Progress: Adding CLK [clock_source 18.1]
+Progress: Parameterizing module CLK
+Progress: Adding jtag_uart_0 [altera_avalon_jtag_uart 18.1]
+Progress: Parameterizing module jtag_uart_0
+Progress: Adding key [altera_avalon_pio 18.1]
+Progress: Parameterizing module key
+Progress: Adding keycode [altera_avalon_pio 18.1]
+Progress: Parameterizing module keycode
+Progress: Adding led [altera_avalon_pio 18.1]
+Progress: Parameterizing module led
+Progress: Adding nios2_gen2_0 [altera_nios2_gen2 18.1]
+Progress: Parameterizing module nios2_gen2_0
+Progress: Adding onchip_memory2_0 [altera_avalon_onchip_memory2 18.1]
+Progress: Parameterizing module onchip_memory2_0
+Progress: Adding otg_hpi_address [altera_avalon_pio 18.1]
+Progress: Parameterizing module otg_hpi_address
+Progress: Adding otg_hpi_cs [altera_avalon_pio 18.1]
+Progress: Parameterizing module otg_hpi_cs
+Progress: Adding otg_hpi_data [altera_avalon_pio 18.1]
+Progress: Parameterizing module otg_hpi_data
+Progress: Adding otg_hpi_r [altera_avalon_pio 18.1]
+Progress: Parameterizing module otg_hpi_r
+Progress: Adding otg_hpi_reset [altera_avalon_pio 18.1]
+Progress: Parameterizing module otg_hpi_reset
+Progress: Adding otg_hpi_w [altera_avalon_pio 18.1]
+Progress: Parameterizing module otg_hpi_w
+Progress: Adding sdram [altera_avalon_new_sdram_controller 18.1]
+Progress: Parameterizing module sdram
+Progress: Adding sdram_pll [altpll 18.1]
+Progress: Parameterizing module sdram_pll
+Progress: Adding switch [altera_avalon_pio 18.1]
+Progress: Parameterizing module switch
+Progress: Adding sysid_qsys_0 [altera_avalon_sysid_qsys 18.1]
+Progress: Parameterizing module sysid_qsys_0
+Progress: Adding timer_0 [altera_avalon_timer 18.1]
+Progress: Parameterizing module timer_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Warning: lab9_soc.AES_Decryption_Core: The SIM_VERILOG fileset must specify the top-level module name.
+Info: lab9_soc.jtag_uart_0: JTAG UART IP input clock need to be at least double (2x) the operating frequency of JTAG TCK on board
+Info: lab9_soc.sdram: SDRAM Controller will only be supported in Quartus Prime Standard Edition in the future release.
+Info: lab9_soc.sysid_qsys_0: System ID is not assigned automatically. Edit the System ID parameter to provide a unique ID
+Info: lab9_soc.sysid_qsys_0: Time stamp will be automatically updated when this component is generated.
+Info: qsys-generate succeeded.
+Info: Finished: Create block symbol file (.bsf)
+Info: 
+Info: Starting: Create HDL design files for synthesis
+Info: qsys-generate /home/tracytang/Documents/ece385/lab9/lab9_soc.qsys --synthesis=VERILOG --output-directory=/home/tracytang/Documents/ece385/lab9/lab9_soc/synthesis --family="Cyclone IV E" --part=EP4CE115F29C7
+Progress: Loading lab9/lab9_soc.qsys
+Progress: Reading input file
+Progress: Adding AES_Decryption_Core_0 [AES_Decryption_Core 1.0]
+Progress: Parameterizing module AES_Decryption_Core_0
+Progress: Adding CLK [clock_source 18.1]
+Progress: Parameterizing module CLK
+Progress: Adding jtag_uart_0 [altera_avalon_jtag_uart 18.1]
+Progress: Parameterizing module jtag_uart_0
+Progress: Adding key [altera_avalon_pio 18.1]
+Progress: Parameterizing module key
+Progress: Adding keycode [altera_avalon_pio 18.1]
+Progress: Parameterizing module keycode
+Progress: Adding led [altera_avalon_pio 18.1]
+Progress: Parameterizing module led
+Progress: Adding nios2_gen2_0 [altera_nios2_gen2 18.1]
+Progress: Parameterizing module nios2_gen2_0
+Progress: Adding onchip_memory2_0 [altera_avalon_onchip_memory2 18.1]
+Progress: Parameterizing module onchip_memory2_0
+Progress: Adding otg_hpi_address [altera_avalon_pio 18.1]
+Progress: Parameterizing module otg_hpi_address
+Progress: Adding otg_hpi_cs [altera_avalon_pio 18.1]
+Progress: Parameterizing module otg_hpi_cs
+Progress: Adding otg_hpi_data [altera_avalon_pio 18.1]
+Progress: Parameterizing module otg_hpi_data
+Progress: Adding otg_hpi_r [altera_avalon_pio 18.1]
+Progress: Parameterizing module otg_hpi_r
+Progress: Adding otg_hpi_reset [altera_avalon_pio 18.1]
+Progress: Parameterizing module otg_hpi_reset
+Progress: Adding otg_hpi_w [altera_avalon_pio 18.1]
+Progress: Parameterizing module otg_hpi_w
+Progress: Adding sdram [altera_avalon_new_sdram_controller 18.1]
+Progress: Parameterizing module sdram
+Progress: Adding sdram_pll [altpll 18.1]
+Progress: Parameterizing module sdram_pll
+Progress: Adding switch [altera_avalon_pio 18.1]
+Progress: Parameterizing module switch
+Progress: Adding sysid_qsys_0 [altera_avalon_sysid_qsys 18.1]
+Progress: Parameterizing module sysid_qsys_0
+Progress: Adding timer_0 [altera_avalon_timer 18.1]
+Progress: Parameterizing module timer_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Warning: lab9_soc.AES_Decryption_Core: The SIM_VERILOG fileset must specify the top-level module name.
+Info: lab9_soc.jtag_uart_0: JTAG UART IP input clock need to be at least double (2x) the operating frequency of JTAG TCK on board
+Info: lab9_soc.sdram: SDRAM Controller will only be supported in Quartus Prime Standard Edition in the future release.
+Info: lab9_soc.sysid_qsys_0: System ID is not assigned automatically. Edit the System ID parameter to provide a unique ID
+Info: lab9_soc.sysid_qsys_0: Time stamp will be automatically updated when this component is generated.
+Info: lab9_soc: Generating lab9_soc "lab9_soc" for QUARTUS_SYNTH
+Info: Inserting clock-crossing logic between cmd_demux.src0 and cmd_mux.sink0
+Info: Inserting clock-crossing logic between cmd_demux.src1 and cmd_mux_001.sink0
+Info: Inserting clock-crossing logic between cmd_demux.src2 and cmd_mux_002.sink0
+Info: Inserting clock-crossing logic between cmd_demux.src4 and cmd_mux_004.sink0
+Info: Inserting clock-crossing logic between cmd_demux.src5 and cmd_mux_005.sink0
+Info: Inserting clock-crossing logic between cmd_demux.src7 and cmd_mux_007.sink0
+Info: Inserting clock-crossing logic between cmd_demux_001.src0 and cmd_mux_002.sink1
+Info: Inserting clock-crossing logic between cmd_demux_001.src2 and cmd_mux_004.sink1
+Info: Inserting clock-crossing logic between cmd_demux_001.src3 and cmd_mux_005.sink1
+Info: Inserting clock-crossing logic between rsp_demux.src0 and rsp_mux.sink0
+Info: Inserting clock-crossing logic between rsp_demux_001.src0 and rsp_mux.sink1
+Info: Inserting clock-crossing logic between rsp_demux_002.src0 and rsp_mux.sink2
+Info: Inserting clock-crossing logic between rsp_demux_002.src1 and rsp_mux_001.sink0
+Info: Inserting clock-crossing logic between rsp_demux_004.src0 and rsp_mux.sink4
+Info: Inserting clock-crossing logic between rsp_demux_004.src1 and rsp_mux_001.sink2
+Info: Inserting clock-crossing logic between rsp_demux_005.src0 and rsp_mux.sink5
+Info: Inserting clock-crossing logic between rsp_demux_005.src1 and rsp_mux_001.sink3
+Info: Inserting clock-crossing logic between rsp_demux_007.src0 and rsp_mux.sink7
+Info: AES_Decryption_Core_0: "lab9_soc" instantiated AES_Decryption_Core "AES_Decryption_Core_0"
+Info: jtag_uart_0: Starting RTL generation for module 'lab9_soc_jtag_uart_0'
+Info: jtag_uart_0:   Generation command is [exec /home/tracytang/intelFPGA_lite/18.1/quartus/linux64/perl/bin/perl -I /home/tracytang/intelFPGA_lite/18.1/quartus/linux64/perl/lib -I /home/tracytang/intelFPGA_lite/18.1/quartus/sopc_builder/bin/europa -I /home/tracytang/intelFPGA_lite/18.1/quartus/sopc_builder/bin/perl_lib -I /home/tracytang/intelFPGA_lite/18.1/quartus/sopc_builder/bin -I /home/tracytang/intelFPGA_lite/18.1/quartus/../ip/altera/sopc_builder_ip/common -I /home/tracytang/intelFPGA_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart -- /home/tracytang/intelFPGA_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart/generate_rtl.pl --name=lab9_soc_jtag_uart_0 --dir=/tmp/alt8354_3767520434817181685.dir/0003_jtag_uart_0_gen/ --quartus_dir=/home/tracytang/intelFPGA_lite/18.1/quartus --verilog --config=/tmp/alt8354_3767520434817181685.dir/0003_jtag_uart_0_gen//lab9_soc_jtag_uart_0_component_configuration.pl  --do_build_sim=0  ]
+Info: jtag_uart_0: Done RTL generation for module 'lab9_soc_jtag_uart_0'
+Info: jtag_uart_0: "lab9_soc" instantiated altera_avalon_jtag_uart "jtag_uart_0"
+Info: nios2_gen2_0: "lab9_soc" instantiated altera_nios2_gen2 "nios2_gen2_0"
+Info: onchip_memory2_0: Starting RTL generation for module 'lab9_soc_onchip_memory2_0'
+Info: onchip_memory2_0:   Generation command is [exec /home/tracytang/intelFPGA_lite/18.1/quartus/linux64/perl/bin/perl -I /home/tracytang/intelFPGA_lite/18.1/quartus/linux64/perl/lib -I /home/tracytang/intelFPGA_lite/18.1/quartus/sopc_builder/bin/europa -I /home/tracytang/intelFPGA_lite/18.1/quartus/sopc_builder/bin/perl_lib -I /home/tracytang/intelFPGA_lite/18.1/quartus/sopc_builder/bin -I /home/tracytang/intelFPGA_lite/18.1/quartus/../ip/altera/sopc_builder_ip/common -I /home/tracytang/intelFPGA_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2 -- /home/tracytang/intelFPGA_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2/generate_rtl.pl --name=lab9_soc_onchip_memory2_0 --dir=/tmp/alt8354_3767520434817181685.dir/0004_onchip_memory2_0_gen/ --quartus_dir=/home/tracytang/intelFPGA_lite/18.1/quartus --verilog --config=/tmp/alt8354_3767520434817181685.dir/0004_onchip_memory2_0_gen//lab9_soc_onchip_memory2_0_component_configuration.pl  --do_build_sim=0  ]
+Info: onchip_memory2_0: Done RTL generation for module 'lab9_soc_onchip_memory2_0'
+Info: onchip_memory2_0: "lab9_soc" instantiated altera_avalon_onchip_memory2 "onchip_memory2_0"
+Info: sdram: Starting RTL generation for module 'lab9_soc_sdram'
+Info: sdram:   Generation command is [exec /home/tracytang/intelFPGA_lite/18.1/quartus/linux64/perl/bin/perl -I /home/tracytang/intelFPGA_lite/18.1/quartus/linux64/perl/lib -I /home/tracytang/intelFPGA_lite/18.1/quartus/sopc_builder/bin/europa -I /home/tracytang/intelFPGA_lite/18.1/quartus/sopc_builder/bin/perl_lib -I /home/tracytang/intelFPGA_lite/18.1/quartus/sopc_builder/bin -I /home/tracytang/intelFPGA_lite/18.1/quartus/../ip/altera/sopc_builder_ip/common -I /home/tracytang/intelFPGA_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_new_sdram_controller -- /home/tracytang/intelFPGA_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_new_sdram_controller/generate_rtl.pl --name=lab9_soc_sdram --dir=/tmp/alt8354_3767520434817181685.dir/0005_sdram_gen/ --quartus_dir=/home/tracytang/intelFPGA_lite/18.1/quartus --verilog --config=/tmp/alt8354_3767520434817181685.dir/0005_sdram_gen//lab9_soc_sdram_component_configuration.pl  --do_build_sim=0  ]
+Info: sdram: Done RTL generation for module 'lab9_soc_sdram'
+Info: sdram: "lab9_soc" instantiated altera_avalon_new_sdram_controller "sdram"
+Info: sdram_pll: "lab9_soc" instantiated altpll "sdram_pll"
+Info: sysid_qsys_0: "lab9_soc" instantiated altera_avalon_sysid_qsys "sysid_qsys_0"
+Info: timer_0: Starting RTL generation for module 'lab9_soc_timer_0'
+Info: timer_0:   Generation command is [exec /home/tracytang/intelFPGA_lite/18.1/quartus/linux64//perl/bin/perl -I /home/tracytang/intelFPGA_lite/18.1/quartus/linux64//perl/lib -I /home/tracytang/intelFPGA_lite/18.1/quartus/sopc_builder/bin/europa -I /home/tracytang/intelFPGA_lite/18.1/quartus/sopc_builder/bin/perl_lib -I /home/tracytang/intelFPGA_lite/18.1/quartus/sopc_builder/bin -I /home/tracytang/intelFPGA_lite/18.1/quartus/../ip/altera/sopc_builder_ip/common -I /home/tracytang/intelFPGA_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_timer -- /home/tracytang/intelFPGA_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_timer/generate_rtl.pl --name=lab9_soc_timer_0 --dir=/tmp/alt8354_3767520434817181685.dir/0009_timer_0_gen/ --quartus_dir=/home/tracytang/intelFPGA_lite/18.1/quartus --verilog --config=/tmp/alt8354_3767520434817181685.dir/0009_timer_0_gen//lab9_soc_timer_0_component_configuration.pl  --do_build_sim=0  ]
+Info: timer_0: Done RTL generation for module 'lab9_soc_timer_0'
+Info: timer_0: "lab9_soc" instantiated altera_avalon_timer "timer_0"
+Info: avalon_st_adapter: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_001: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_002: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_003: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_004: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_005: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_006: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_007: Inserting error_adapter: error_adapter_0
+Info: mm_interconnect_0: "lab9_soc" instantiated altera_mm_interconnect "mm_interconnect_0"
+Info: irq_mapper: "lab9_soc" instantiated altera_irq_mapper "irq_mapper"
+Info: irq_synchronizer: "lab9_soc" instantiated altera_irq_clock_crosser "irq_synchronizer"
+Info: rst_controller: "lab9_soc" instantiated altera_reset_controller "rst_controller"
+Info: cpu: Starting RTL generation for module 'lab9_soc_nios2_gen2_0_cpu'
+Info: cpu:   Generation command is [exec /home/tracytang/intelFPGA_lite/18.1/quartus/linux64//eperlcmd -I /home/tracytang/intelFPGA_lite/18.1/quartus/linux64//perl/lib -I /home/tracytang/intelFPGA_lite/18.1/quartus/sopc_builder/bin/europa -I /home/tracytang/intelFPGA_lite/18.1/quartus/sopc_builder/bin/perl_lib -I /home/tracytang/intelFPGA_lite/18.1/quartus/sopc_builder/bin -I /home/tracytang/intelFPGA_lite/18.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/cpu_lib -I /home/tracytang/intelFPGA_lite/18.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/nios_lib -I /home/tracytang/intelFPGA_lite/18.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2 -I /home/tracytang/intelFPGA_lite/18.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2 -- /home/tracytang/intelFPGA_lite/18.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/generate_rtl.epl --name=lab9_soc_nios2_gen2_0_cpu --dir=/tmp/alt8354_3767520434817181685.dir/0013_cpu_gen/ --quartus_bindir=/home/tracytang/intelFPGA_lite/18.1/quartus/linux64/ --verilog --config=/tmp/alt8354_3767520434817181685.dir/0013_cpu_gen//lab9_soc_nios2_gen2_0_cpu_processor_configuration.pl  --do_build_sim=0  ]
+Info: cpu: # 2020.04.02 18:40:54 (*) Starting Nios II generation
+Info: cpu: # 2020.04.02 18:40:54 (*)   Checking for plaintext license.
+Info: cpu: # 2020.04.02 18:40:54 (*)   Couldn't query license setup in Quartus directory /home/tracytang/intelFPGA_lite/18.1/quartus/linux64/
+Info: cpu: # 2020.04.02 18:40:54 (*)   Defaulting to contents of LM_LICENSE_FILE environment variable
+Info: cpu: # 2020.04.02 18:40:54 (*)   LM_LICENSE_FILE environment variable is empty
+Info: cpu: # 2020.04.02 18:40:54 (*)   Plaintext license not found.
+Info: cpu: # 2020.04.02 18:40:54 (*)   No license required to generate encrypted Nios II/e.
+Info: cpu: # 2020.04.02 18:40:54 (*)   Elaborating CPU configuration settings
+Info: cpu: # 2020.04.02 18:40:54 (*)   Creating all objects for CPU
+Info: cpu: # 2020.04.02 18:40:56 (*)   Generating RTL from CPU objects
+Info: cpu: # 2020.04.02 18:40:56 (*)   Creating plain-text RTL
+Info: cpu: # 2020.04.02 18:40:56 (*) Done Nios II generation
+Info: cpu: Done RTL generation for module 'lab9_soc_nios2_gen2_0_cpu'
+Info: cpu: "nios2_gen2_0" instantiated altera_nios2_gen2_unit "cpu"
+Info: nios2_gen2_0_data_master_translator: "mm_interconnect_0" instantiated altera_merlin_master_translator "nios2_gen2_0_data_master_translator"
+Info: AES_Decryption_Core_0_AES_Slave_translator: "mm_interconnect_0" instantiated altera_merlin_slave_translator "AES_Decryption_Core_0_AES_Slave_translator"
+Info: nios2_gen2_0_data_master_agent: "mm_interconnect_0" instantiated altera_merlin_master_agent "nios2_gen2_0_data_master_agent"
+Info: AES_Decryption_Core_0_AES_Slave_agent: "mm_interconnect_0" instantiated altera_merlin_slave_agent "AES_Decryption_Core_0_AES_Slave_agent"
+Info: AES_Decryption_Core_0_AES_Slave_agent_rsp_fifo: "mm_interconnect_0" instantiated altera_avalon_sc_fifo "AES_Decryption_Core_0_AES_Slave_agent_rsp_fifo"
+Info: router: "mm_interconnect_0" instantiated altera_merlin_router "router"
+Info: router_001: "mm_interconnect_0" instantiated altera_merlin_router "router_001"
+Info: router_002: "mm_interconnect_0" instantiated altera_merlin_router "router_002"
+Info: router_004: "mm_interconnect_0" instantiated altera_merlin_router "router_004"
+Info: cmd_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_demux"
+Info: cmd_demux_001: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_demux_001"
+Info: cmd_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux"
+Info: cmd_mux_002: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux_002"
+Info: Reusing file /home/tracytang/Documents/ece385/lab9/lab9_soc/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: rsp_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "rsp_demux"
+Info: rsp_demux_002: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "rsp_demux_002"
+Info: rsp_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_mux"
+Info: Reusing file /home/tracytang/Documents/ece385/lab9/lab9_soc/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: rsp_mux_001: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_mux_001"
+Info: Reusing file /home/tracytang/Documents/ece385/lab9/lab9_soc/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: crosser: "mm_interconnect_0" instantiated altera_avalon_st_handshake_clock_crosser "crosser"
+Info: avalon_st_adapter: "mm_interconnect_0" instantiated altera_avalon_st_adapter "avalon_st_adapter"
+Info: error_adapter_0: "avalon_st_adapter" instantiated error_adapter "error_adapter_0"
+Info: lab9_soc: Done "lab9_soc" with 34 modules, 51 files
+Info: qsys-generate succeeded.
+Info: Finished: Create HDL design files for synthesis

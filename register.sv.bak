@@ -1,0 +1,20 @@
+
+module register (
+
+	input logic Clk,
+	input logic Reset,
+	input logic Clr,
+	input logic load,
+	input logic [15:0] Din,
+	
+	output logic [15:0] Dout
+	);
+	
+	always_ff @ (posedge Clk) begin
+		if (Reset) 	Dout = 16'h0000;
+		else if (Clr) 	Dout = 16'h0000;
+		else if (load) Dout <= Din;
+		else Dout <= Dout;
+		
+	end
+endmodule

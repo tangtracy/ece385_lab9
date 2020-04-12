@@ -1,0 +1,1763 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/tracytang/Documents/ece385/lab9/simulation/modelsim
+valtera_avalon_sc_fifo
+Z1 !s110 1586140724
+!i10b 1
+!s100 4mK@em][G=j]om3zJIhOc0
+IPCY=MOEUGPg]07i[D7e4G3
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1585870856
+8/home/tracytang/Documents/ece385/lab9/lab9_soc/synthesis/submodules/altera_avalon_sc_fifo.v
+F/home/tracytang/Documents/ece385/lab9/lab9_soc/synthesis/submodules/altera_avalon_sc_fifo.v
+Z4 L0 21
+Z5 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z6 !s108 1586140724.000000
+!s107 /home/tracytang/Documents/ece385/lab9/lab9_soc/synthesis/submodules/altera_avalon_sc_fifo.v|
+!s90 -reportprogress|300|-vlog01compat|-work|lab9_soc|+incdir+/home/tracytang/Documents/ece385/lab9/lab9_soc/synthesis/submodules|/home/tracytang/Documents/ece385/lab9/lab9_soc/synthesis/submodules/altera_avalon_sc_fifo.v|
+!i113 1
+Z7 o-vlog01compat -work lab9_soc
+Z8 !s92 -vlog01compat -work lab9_soc +incdir+/home/tracytang/Documents/ece385/lab9/lab9_soc/synthesis/submodules
+Z9 tCvgOpt 0
+valtera_avalon_st_clock_crosser
+Z10 !s110 1586140725
+!i10b 1
+!s100 YbU`iK^TYJ_9Hz`CZekjQ3
+IAl;O?O;hM20@fHTK1Zhb^1
+R2
+R0
+Z11 w1585870857
+8/home/tracytang/Documents/ece385/lab9/lab9_soc/synthesis/submodules/altera_avalon_st_clock_crosser.v
+F/home/tracytang/Documents/ece385/lab9/lab9_soc/synthesis/submodules/altera_avalon_st_clock_crosser.v
+Z12 L0 22
+R5
+r1
+!s85 0
+31
+Z13 !s108 1586140725.000000
+!s107 /home/tracytang/Documents/ece385/lab9/lab9_soc/synthesis/submodules/altera_avalon_st_clock_crosser.v|
+!s90 -reportprogress|300|-vlog01compat|-work|lab9_soc|+incdir+/home/tracytang/Documents/ece385/lab9/lab9_soc/synthesis/submodules|/home/tracytang/Documents/ece385/lab9/lab9_soc/synthesis/submodules/altera_avalon_st_clock_crosser.v|
+!i113 1
+R7
+R8
+R9
+valtera_avalon_st_handshake_clock_crosser
+R10
+!i10b 1
+!s100 3f<J9K;e[9FU@JKn0^PK?0
+Ic;V5nGR76ajhN_CmLl20k1
+R2
+R0
+R11
+8/home/tracytang/Documents/ece385/lab9/lab9_soc/synthesis/submodules/altera_avalon_st_handshake_clock_crosser.v
+F/home/tracytang/Documents/ece385/lab9/lab9_soc/synthesis/submodules/altera_avalon_st_handshake_clock_crosser.v
+Z14 L0 24
+R5
+r1
+!s85 0
+31
+R13
+!s107 /home/tracytang/Documents/ece385/lab9/lab9_soc/synthesis/submodules/altera_avalon_st_handshake_clock_crosser.v|
+!s90 -reportprogress|300|-vlog01compat|-work|lab9_soc|+incdir+/home/tracytang/Documents/ece385/lab9/lab9_soc/synthesis/submodules|/home/tracytang/Documents/ece385/lab9/lab9_soc/synthesis/submodules/altera_avalon_st_handshake_clock_crosser.v|
+!i113 1
+R7
+R8
+R9
+valtera_irq_clock_crosser
+Z15 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+R10
+!i10b 1
+!s100 h4R`cF8cBH7NA_@W;Oa@73
+I2<8zgNlTgb<F=h3fEoSLk3
+R2
+!s105 altera_irq_clock_crosser_sv_unit
+S1
+R0
+Z16 w1585870853
+8/home/tracytang/Documents/ece385/lab9/lab9_soc/synthesis/submodules/altera_irq_clock_crosser.sv
+F/home/tracytang/Documents/ece385/lab9/lab9_soc/synthesis/submodules/altera_irq_clock_crosser.sv
+R4
+R5
+r1
+!s85 0
+31
+R13
+!s107 /home/tracytang/Documents/ece385/lab9/lab9_soc/synthesis/submodules/altera_irq_clock_crosser.sv|
+!s90 -reportprogress|300|-sv|-work|lab9_soc|+incdir+/home/tracytang/Documents/ece385/lab9/lab9_soc/synthesis/submodules|/home/tracytang/Documents/ece385/lab9/lab9_soc/synthesis/submodules/altera_irq_clock_crosser.sv|
+!i113 1
+Z17 o-sv -work lab9_soc
+Z18 !s92 -sv -work lab9_soc +incdir+/home/tracytang/Documents/ece385/lab9/lab9_soc/synthesis/submodules
+R9
+valtera_merlin_arb_adder
+R15
+Z19 !s110 1586140726
+!i10b 1
+!s100 1Jn[a;@5nZmTN?DFKQNzj2
+I>N@HE_>?AZ6>C@T9PP1F@3
+R2
+Z20 !s105 altera_merlin_arbitrator_sv_unit
+S1
+R0
+R11
+Z21 8/home/tracytang/Documents/ece385/lab9/lab9_soc/synthesis/submodules/altera_merlin_arbitrator.sv
+Z22 F/home/tracytang/Documents/ece385/lab9/lab9_soc/synthesis/submodules/altera_merlin_arbitrator.sv
+L0 228
+R5
+r1
+!s85 0
+31
+Z23 !s108 1586140726.000000
+Z24 !s107 /home/tracytang/Documents/ece385/lab9/lab9_soc/synthesis/submodules/altera_merlin_arbitrator.sv|
+Z25 !s90 -reportprogress|300|-sv|-work|lab9_soc|+incdir+/home/tracytang/Documents/ece385/lab9/lab9_soc/synthesis/submodules|/home/tracytang/Documents/ece385/lab9/lab9_soc/synthesis/submodules/altera_merlin_arbitrator.sv|
+!i113 1
+R17
+R18
+R9
+valtera_merlin_arbitrator
+R15
+R19
+!i10b 1
+!s100 NQTehjm2fNQROUMUzShGa1
+IomcnhY_=QIX<0g4R;CjFD3
+R2
+R20
+S1
+R0
+R11
+R21
+R22
+L0 103
+R5
+r1
+!s85 0
+31
+R23
+R24
+R25
+!i113 1
+R17
+R18
+R9
+valtera_merlin_burst_uncompressor
+R15
+Z26 !s110 1586140727
+!i10b 1
+!s100 f1?Rb<=9U?R9LJoHl;7>T3
+IZKAQB:b66dcF3Ka;V_KlC3
+R2
+!s105 altera_merlin_burst_uncompressor_sv_unit
+S1
+R0
+R3
+8/home/tracytang/Documents/ece385/lab9/lab9_soc/synthesis/submodules/altera_merlin_burst_uncompressor.sv
+F/home/tracytang/Documents/ece385/lab9/lab9_soc/synthesis/submodules/altera_merlin_burst_uncompressor.sv
+L0 40
+R5
+r1
+!s85 0
+31
+Z27 !s108 1586140727.000000
+!s107 /home/tracytang/Documents/ece385/lab9/lab9_soc/synthesis/submodules/altera_merlin_burst_uncompressor.sv|
+!s90 -reportprogress|300|-sv|-work|lab9_soc|+incdir+/home/tracytang/Documents/ece385/lab9/lab9_soc/synthesis/submodules|/home/tracytang/Documents/ece385/lab9/lab9_soc/synthesis/submodules/altera_merlin_burst_uncompressor.sv|
+!i113 1
+R17
+R18
+R9
+valtera_merlin_master_agent
+R15
+R26
+!i10b 1
+!s100 _CJm:YX=>U2LQKH;8=@cb0
+IGWNem<AoUSXY4MFmj3>OW1
+R2
+!s105 altera_merlin_master_agent_sv_unit
+S1
+R0
+R3
+8/home/tracytang/Documents/ece385/lab9/lab9_soc/synthesis/submodules/altera_merlin_master_agent.sv
+F/home/tracytang/Documents/ece385/lab9/lab9_soc/synthesis/submodules/altera_merlin_master_agent.sv
+L0 28
+R5
+r1
+!s85 0
+31
+R27
+!s107 /home/tracytang/Documents/ece385/lab9/lab9_soc/synthesis/submodules/altera_merlin_master_agent.sv|
+!s90 -reportprogress|300|-sv|-work|lab9_soc|+incdir+/home/tracytang/Documents/ece385/lab9/lab9_soc/synthesis/submodules|/home/tracytang/Documents/ece385/lab9/lab9_soc/synthesis/submodules/altera_merlin_master_agent.sv|
+!i113 1
+R17
+R18
+R9
+valtera_merlin_master_translator
+R15
+R26
+!i10b 1
+!s100 NdRk@]3fC2C@V7Rm;dQM31
+IY3O2[C<@zke8m`3`XdTF42
+R2
+!s105 altera_merlin_master_translator_sv_unit
+S1
+R0
+R3
+8/home/tracytang/Documents/ece385/lab9/lab9_soc/synthesis/submodules/altera_merlin_master_translator.sv
+F/home/tracytang/Documents/ece385/lab9/lab9_soc/synthesis/submodules/altera_merlin_master_translator.sv
+L0 32
+R5
+r1
+!s85 0
+31
+R27
+!s107 /home/tracytang/Documents/ece385/lab9/lab9_soc/synthesis/submodules/altera_merlin_master_translator.sv|
+!s90 -reportprogress|300|-sv|-work|lab9_soc|+incdir+/home/tracytang/Documents/ece385/lab9/lab9_soc/synthesis/submodules|/home/tracytang/Documents/ece385/lab9/lab9_soc/synthesis/submodules/altera_merlin_master_translator.sv|
+!i113 1
+R17
+R18
+R9
+valtera_merlin_slave_agent
+R15
+R26
+!i10b 1
+!s100 ePZN1d?B062J`OBb?blff3
+I<b?^Tfd_L1IK4B?M2ik823
+R2
+!s105 altera_merlin_slave_agent_sv_unit
+S1
+R0
+R3
+8/home/tracytang/Documents/ece385/lab9/lab9_soc/synthesis/submodules/altera_merlin_slave_agent.sv
+F/home/tracytang/Documents/ece385/lab9/lab9_soc/synthesis/submodules/altera_merlin_slave_agent.sv
+Z28 L0 34
+R5
+r1
+!s85 0
+31
+R27
+!s107 /home/tracytang/Documents/ece385/lab9/lab9_soc/synthesis/submodules/altera_merlin_slave_agent.sv|
+!s90 -reportprogress|300|-sv|-work|lab9_soc|+incdir+/home/tracytang/Documents/ece385/lab9/lab9_soc/synthesis/submodules|/home/tracytang/Documents/ece385/lab9/lab9_soc/synthesis/submodules/altera_merlin_slave_agent.sv|
+!i113 1
+R17
+R18
+R9
+valtera_merlin_slave_translator
+R15
+R26
+!i10b 1
+!s100 k`9[YAn_dLTkg;GE`mOb61
+Im^UPdS:odZ9TJO=ko:^XY3
+R2
+!s105 altera_merlin_slave_translator_sv_unit
+S1
+R0
+R3
+8/home/tracytang/Documents/ece385/lab9/lab9_soc/synthesis/submodules/altera_merlin_slave_translator.sv
+F/home/tracytang/Documents/ece385/lab9/lab9_soc/synthesis/submodules/altera_merlin_slave_translator.sv
+L0 35
+R5
+r1
+!s85 0
+31
+R27
+!s107 /home/tracytang/Documents/ece385/lab9/lab9_soc/synthesis/submodules/altera_merlin_slave_translator.sv|
+!s90 -reportprogress|300|-sv|-work|lab9_soc|+incdir+/home/tracytang/Documents/ece385/lab9/lab9_soc/synthesis/submodules|/home/tracytang/Documents/ece385/lab9/lab9_soc/synthesis/submodules/altera_merlin_slave_translator.sv|
+!i113 1
+R17
+R18
+R9
+valtera_reset_controller
+R1
+!i10b 1
+!s100 z[H_hRO9gO=:^2E3_jWH03
+IgXS=SANnI5YKj6V>[97960
+R2
+R0
+R16
+8/home/tracytang/Documents/ece385/lab9/lab9_soc/synthesis/submodules/altera_reset_controller.v
+F/home/tracytang/Documents/ece385/lab9/lab9_soc/synthesis/submodules/altera_reset_controller.v
+L0 42
+R5
+r1
+!s85 0
+31
+Z29 !s108 1586140723.000000
+!s107 /home/tracytang/Documents/ece385/lab9/lab9_soc/synthesis/submodules/altera_reset_controller.v|
+!s90 -reportprogress|300|-vlog01compat|-work|lab9_soc|+incdir+/home/tracytang/Documents/ece385/lab9/lab9_soc/synthesis/submodules|/home/tracytang/Documents/ece385/lab9/lab9_soc/synthesis/submodules/altera_reset_controller.v|
+!i113 1
+R7
+R8
+R9
+valtera_reset_synchronizer
+R1
+!i10b 1
+!s100 oWLYmSO[EOX[G0PgQhZ2=0
+IBOEG3:9OgjVG0cFzNhcCX2
+R2
+R0
+R16
+8/home/tracytang/Documents/ece385/lab9/lab9_soc/synthesis/submodules/altera_reset_synchronizer.v
+F/home/tracytang/Documents/ece385/lab9/lab9_soc/synthesis/submodules/altera_reset_synchronizer.v
+R14
+R5
+r1
+!s85 0
+31
+R6
+!s107 /home/tracytang/Documents/ece385/lab9/lab9_soc/synthesis/submodules/altera_reset_synchronizer.v|
+!s90 -reportprogress|300|-vlog01compat|-work|lab9_soc|+incdir+/home/tracytang/Documents/ece385/lab9/lab9_soc/synthesis/submodules|/home/tracytang/Documents/ece385/lab9/lab9_soc/synthesis/submodules/altera_reset_synchronizer.v|
+!i113 1
+R7
+R8
+R9
+valtera_std_synchronizer_nocut
+R19
+!i10b 1
+!s100 b8zV2<79GgkNg0GC<P[GJ2
+IkTSTT`7d^4NWRY29eli:C2
+R2
+R0
+R11
+8/home/tracytang/Documents/ece385/lab9/lab9_soc/synthesis/submodules/altera_std_synchronizer_nocut.v
+F/home/tracytang/Documents/ece385/lab9/lab9_soc/synthesis/submodules/altera_std_synchronizer_nocut.v
+L0 44
+R5
+r1
+!s85 0
+31
+R13
+!s107 /home/tracytang/Documents/ece385/lab9/lab9_soc/synthesis/submodules/altera_std_synchronizer_nocut.v|
+!s90 -reportprogress|300|-vlog01compat|-work|lab9_soc|+incdir+/home/tracytang/Documents/ece385/lab9/lab9_soc/synthesis/submodules|/home/tracytang/Documents/ece385/lab9/lab9_soc/synthesis/submodules/altera_std_synchronizer_nocut.v|
+!i113 1
+R7
+R8
+R9
+vavalon_aes_interface
+R15
+R26
+!i10b 1
+!s100 iE=B8fOF>2_2hYgBiXD>S2
+IhFoK@WfXcNL;GOmoORh;T2
+R2
+!s105 avalon_aes_interface_sv_unit
+S1
+R0
+w1586139730
+8/home/tracytang/Documents/ece385/lab9/lab9_soc/synthesis/submodules/avalon_aes_interface.sv
+F/home/tracytang/Documents/ece385/lab9/lab9_soc/synthesis/submodules/avalon_aes_interface.sv
+R12
+R5
+r1
+!s85 0
+31
+R27
+!s107 /home/tracytang/Documents/ece385/lab9/lab9_soc/synthesis/submodules/avalon_aes_interface.sv|
+!s90 -reportprogress|300|-sv|-work|lab9_soc|+incdir+/home/tracytang/Documents/ece385/lab9/lab9_soc/synthesis/submodules|/home/tracytang/Documents/ece385/lab9/lab9_soc/synthesis/submodules/avalon_aes_interface.sv|
+!i113 1
+R17
+R18
+R9
+vlab9_soc
+!s110 1586140723
+!i10b 1
+!s100 PGHXDH;i1]bF2D4@>m8fP1
+Ing6f:?eZ9e15fKFFASGYO1
+R2
+R0
+w1585871012
+8/home/tracytang/Documents/ece385/lab9/lab9_soc/synthesis/lab9_soc.v
+F/home/tracytang/Documents/ece385/lab9/lab9_soc/synthesis/lab9_soc.v
+L0 6
+R5
+r1
+!s85 0
+31
+R29
+!s107 /home/tracytang/Documents/ece385/lab9/lab9_soc/synthesis/lab9_soc.v|
+!s90 -reportprogress|300|-vlog01compat|-work|lab9_soc|+incdir+/home/tracytang/Documents/ece385/lab9/lab9_soc/synthesis|/home/tracytang/Documents/ece385/lab9/lab9_soc/synthesis/lab9_soc.v|
+!i113 1
+R7
+!s92 -vlog01compat -work lab9_soc +incdir+/home/tracytang/Documents/ece385/lab9/lab9_soc/synthesis
+R9
+vlab9_soc_irq_mapper
+R15
+R10
+!i10b 1
+!s100 mKVKlY5YUQ]iencHUn?lR3
+Iz4SeeC0IznlaEA2Uf3]RL0
+R2
+!s105 lab9_soc_irq_mapper_sv_unit
+S1
+R0
+R16
+8/home/tracytang/Documents/ece385/lab9/lab9_soc/synthesis/submodules/lab9_soc_irq_mapper.sv
+F/home/tracytang/Documents/ece385/lab9/lab9_soc/synthesis/submodules/lab9_soc_irq_mapper.sv
+L0 31
+R5
+r1
+!s85 0
+31
+R13
+!s107 /home/tracytang/Documents/ece385/lab9/lab9_soc/synthesis/submodules/lab9_soc_irq_mapper.sv|
+!s90 -reportprogress|300|-sv|-work|lab9_soc|+incdir+/home/tracytang/Documents/ece385/lab9/lab9_soc/synthesis/submodules|/home/tracytang/Documents/ece385/lab9/lab9_soc/synthesis/submodules/lab9_soc_irq_mapper.sv|
+!i113 1
+R17
+R18
+R9
+vlab9_soc_jtag_uart_0
+R10
+!i10b 1
+!s100 ezVSi?KNgjj1inz:5?g7f0
+Ie1:gG<lP_P<Lg6S]oOamf0
+R2
+R0
+Z30 w1585870846
+Z31 8/home/tracytang/Documents/ece385/lab9/lab9_soc/synthesis/submodules/lab9_soc_jtag_uart_0.v
+Z32 F/home/tracytang/Documents/ece385/lab9/lab9_soc/synthesis/submodules/lab9_soc_jtag_uart_0.v
+L0 331
+R5
+r1
+!s85 0
+31
+R13
+Z33 !s107 /home/tracytang/Documents/ece385/lab9/lab9_soc/synthesis/submodules/lab9_soc_jtag_uart_0.v|
+Z34 !s90 -reportprogress|300|-vlog01compat|-work|lab9_soc|+incdir+/home/tracytang/Documents/ece385/lab9/lab9_soc/synthesis/submodules|/home/tracytang/Documents/ece385/lab9/lab9_soc/synthesis/submodules/lab9_soc_jtag_uart_0.v|
+!i113 1
+R7
+R8
+R9
+vlab9_soc_jtag_uart_0_scfifo_r
+R10
+!i10b 1
+!s100 BmB_Tf;OzaPCM2h4gJ8zT0
+I?lRFR0FZFc[AY>]J]C0A80
+R2
+R0
+R30
+R31
+R32
+L0 243
+R5
+r1
+!s85 0
+31
+R13
+R33
+R34
+!i113 1
+R7
+R8
+R9
+vlab9_soc_jtag_uart_0_scfifo_w
+R10
+!i10b 1
+!s100 idS<A>ZjX@Zh76M3e`X`02
+Ia=21S02Y^L8f@9l?j:?3L1
+R2
+R0
+R30
+R31
+R32
+L0 78
+R5
+r1
+!s85 0
+31
+R13
+R33
+R34
+!i113 1
+R7
+R8
+R9
+vlab9_soc_jtag_uart_0_sim_scfifo_r
+R10
+!i10b 1
+!s100 o@J@FUBEXW8W<b@oHU2KY2
+Ih9Nh@3BiLELOV`m]]f>0Z3
+R2
+R0
+R30
+R31
+R32
+L0 164
+R5
+r1
+!s85 0
+31
+R13
+R33
+R34
+!i113 1
+R7
+R8
+R9
+vlab9_soc_jtag_uart_0_sim_scfifo_w
+R10
+!i10b 1
+!s100 aSUg]mzQ?HEQQ:4m=9K8?3
+I@7W:J`29DaHUHnSDfPfII2
+R2
+R0
+R30
+R31
+R32
+R4
+R5
+r1
+!s85 0
+31
+R13
+R33
+R34
+!i113 1
+R7
+R8
+R9
+vlab9_soc_mm_interconnect_0
+R1
+!i10b 1
+!s100 FoGCE8XT0APUUU9O7hK[Y2
+I[`oJdk`Q7`CA_BTNY22GO1
+R2
+R0
+R16
+8/home/tracytang/Documents/ece385/lab9/lab9_soc/synthesis/submodules/lab9_soc_mm_interconnect_0.v
+F/home/tracytang/Documents/ece385/lab9/lab9_soc/synthesis/submodules/lab9_soc_mm_interconnect_0.v
+L0 9
+R5
+r1
+!s85 0
+31
+R6
+!s107 /home/tracytang/Documents/ece385/lab9/lab9_soc/synthesis/submodules/lab9_soc_mm_interconnect_0.v|
+!s90 -reportprogress|300|-vlog01compat|-work|lab9_soc|+incdir+/home/tracytang/Documents/ece385/lab9/lab9_soc/synthesis/submodules|/home/tracytang/Documents/ece385/lab9/lab9_soc/synthesis/submodules/lab9_soc_mm_interconnect_0.v|
+!i113 1
+R7
+R8
+R9
+vlab9_soc_mm_interconnect_0_avalon_st_adapter
+R1
+!i10b 1
+!s100 i6:YS24AmzoP9amOA4RVA0
+IiRidBE0I<Q0IO6<4=IkjM0
+R2
+R0
+R11
+8/home/tracytang/Documents/ece385/lab9/lab9_soc/synthesis/submodules/lab9_soc_mm_interconnect_0_avalon_st_adapter.v
+F/home/tracytang/Documents/ece385/lab9/lab9_soc/synthesis/submodules/lab9_soc_mm_interconnect_0_avalon_st_adapter.v
+L0 9
+R5
+r1
+!s85 0
+31
+R6
+!s107 /home/tracytang/Documents/ece385/lab9/lab9_soc/synthesis/submodules/lab9_soc_mm_interconnect_0_avalon_st_adapter.v|
+!s90 -reportprogress|300|-vlog01compat|-work|lab9_soc|+incdir+/home/tracytang/Documents/ece385/lab9/lab9_soc/synthesis/submodules|/home/tracytang/Documents/ece385/lab9/lab9_soc/synthesis/submodules/lab9_soc_mm_interconnect_0_avalon_st_adapter.v|
+!i113 1
+R7
+R8
+R9
+vlab9_soc_mm_interconnect_0_avalon_st_adapter_error_adapter_0
+R15
+R10
+!i10b 1
+!s100 PLS>hHl5EjHIHCQdcMhT^2
+Ikmg4W4EEiHV>f1Fm?Z5in1
+R2
+!s105 lab9_soc_mm_interconnect_0_avalon_st_adapter_error_adapter_0_sv_unit
+S1
+R0
+R11
+8/home/tracytang/Documents/ece385/lab9/lab9_soc/synthesis/submodules/lab9_soc_mm_interconnect_0_avalon_st_adapter_error_adapter_0.sv
+F/home/tracytang/Documents/ece385/lab9/lab9_soc/synthesis/submodules/lab9_soc_mm_interconnect_0_avalon_st_adapter_error_adapter_0.sv
+L0 66
+R5
+r1
+!s85 0
+31
+R13
+!s107 /home/tracytang/Documents/ece385/lab9/lab9_soc/synthesis/submodules/lab9_soc_mm_interconnect_0_avalon_st_adapter_error_adapter_0.sv|
+!s90 -reportprogress|300|-sv|-work|lab9_soc|+incdir+/home/tracytang/Documents/ece385/lab9/lab9_soc/synthesis/submodules|/home/tracytang/Documents/ece385/lab9/lab9_soc/synthesis/submodules/lab9_soc_mm_interconnect_0_avalon_st_adapter_error_adapter_0.sv|
+!i113 1
+R17
+R18
+R9
+vlab9_soc_mm_interconnect_0_cmd_demux
+R15
+R19
+!i10b 1
+!s100 XK7WXc`^QG3YoKX0E0_7:3
+Ig4eiYnnChF[:dz13VRRS[3
+R2
+!s105 lab9_soc_mm_interconnect_0_cmd_demux_sv_unit
+S1
+R0
+R11
+8/home/tracytang/Documents/ece385/lab9/lab9_soc/synthesis/submodules/lab9_soc_mm_interconnect_0_cmd_demux.sv
+F/home/tracytang/Documents/ece385/lab9/lab9_soc/synthesis/submodules/lab9_soc_mm_interconnect_0_cmd_demux.sv
+Z35 L0 43
+R5
+r1
+!s85 0
+31
+R23
+!s107 /home/tracytang/Documents/ece385/lab9/lab9_soc/synthesis/submodules/lab9_soc_mm_interconnect_0_cmd_demux.sv|
+!s90 -reportprogress|300|-sv|-work|lab9_soc|+incdir+/home/tracytang/Documents/ece385/lab9/lab9_soc/synthesis/submodules|/home/tracytang/Documents/ece385/lab9/lab9_soc/synthesis/submodules/lab9_soc_mm_interconnect_0_cmd_demux.sv|
+!i113 1
+R17
+R18
+R9
+vlab9_soc_mm_interconnect_0_cmd_demux_001
+R15
+R19
+!i10b 1
+!s100 [Sh2e>OLcD41V3_>4510m2
+I[M_L6<J3SK@FLeH:_@JRe1
+R2
+!s105 lab9_soc_mm_interconnect_0_cmd_demux_001_sv_unit
+S1
+R0
+R11
+8/home/tracytang/Documents/ece385/lab9/lab9_soc/synthesis/submodules/lab9_soc_mm_interconnect_0_cmd_demux_001.sv
+F/home/tracytang/Documents/ece385/lab9/lab9_soc/synthesis/submodules/lab9_soc_mm_interconnect_0_cmd_demux_001.sv
+R35
+R5
+r1
+!s85 0
+31
+R23
+!s107 /home/tracytang/Documents/ece385/lab9/lab9_soc/synthesis/submodules/lab9_soc_mm_interconnect_0_cmd_demux_001.sv|
+!s90 -reportprogress|300|-sv|-work|lab9_soc|+incdir+/home/tracytang/Documents/ece385/lab9/lab9_soc/synthesis/submodules|/home/tracytang/Documents/ece385/lab9/lab9_soc/synthesis/submodules/lab9_soc_mm_interconnect_0_cmd_demux_001.sv|
+!i113 1
+R17
+R18
+R9
+vlab9_soc_mm_interconnect_0_cmd_mux
+R15
+R19
+!i10b 1
+!s100 QQ11@[<5WDBhbL_=9:;@J0
+IJ_bbNF88IG@LM1O81N7[20
+R2
+!s105 lab9_soc_mm_interconnect_0_cmd_mux_sv_unit
+S1
+R0
+R11
+8/home/tracytang/Documents/ece385/lab9/lab9_soc/synthesis/submodules/lab9_soc_mm_interconnect_0_cmd_mux.sv
+F/home/tracytang/Documents/ece385/lab9/lab9_soc/synthesis/submodules/lab9_soc_mm_interconnect_0_cmd_mux.sv
+Z36 L0 51
+R5
+r1
+!s85 0
+31
+R23
+!s107 /home/tracytang/Documents/ece385/lab9/lab9_soc/synthesis/submodules/lab9_soc_mm_interconnect_0_cmd_mux.sv|
+!s90 -reportprogress|300|-sv|-work|lab9_soc|+incdir+/home/tracytang/Documents/ece385/lab9/lab9_soc/synthesis/submodules|/home/tracytang/Documents/ece385/lab9/lab9_soc/synthesis/submodules/lab9_soc_mm_interconnect_0_cmd_mux.sv|
+!i113 1
+R17
+R18
+R9
+vlab9_soc_mm_interconnect_0_cmd_mux_002
+R15
+R19
+!i10b 1
+!s100 c9dhb6<aT8@6GhB3@FkTa0
+IhCH[:W9c8fo3m]INH3e@F0
+R2
+!s105 lab9_soc_mm_interconnect_0_cmd_mux_002_sv_unit
+S1
+R0
+R11
+8/home/tracytang/Documents/ece385/lab9/lab9_soc/synthesis/submodules/lab9_soc_mm_interconnect_0_cmd_mux_002.sv
+F/home/tracytang/Documents/ece385/lab9/lab9_soc/synthesis/submodules/lab9_soc_mm_interconnect_0_cmd_mux_002.sv
+R36
+R5
+r1
+!s85 0
+31
+R23
+!s107 /home/tracytang/Documents/ece385/lab9/lab9_soc/synthesis/submodules/lab9_soc_mm_interconnect_0_cmd_mux_002.sv|
+!s90 -reportprogress|300|-sv|-work|lab9_soc|+incdir+/home/tracytang/Documents/ece385/lab9/lab9_soc/synthesis/submodules|/home/tracytang/Documents/ece385/lab9/lab9_soc/synthesis/submodules/lab9_soc_mm_interconnect_0_cmd_mux_002.sv|
+!i113 1
+R17
+R18
+R9
+vlab9_soc_mm_interconnect_0_router
+R15
+R26
+!i10b 1
+!s100 BA2m@a_2FL_4JWcSC7A@h2
+IWecK0j>JW_CNM]@TTcTa11
+R2
+Z37 !s105 lab9_soc_mm_interconnect_0_router_sv_unit
+S1
+R0
+R11
+Z38 8/home/tracytang/Documents/ece385/lab9/lab9_soc/synthesis/submodules/lab9_soc_mm_interconnect_0_router.sv
+Z39 F/home/tracytang/Documents/ece385/lab9/lab9_soc/synthesis/submodules/lab9_soc_mm_interconnect_0_router.sv
+Z40 L0 84
+R5
+r1
+!s85 0
+31
+R27
+Z41 !s107 /home/tracytang/Documents/ece385/lab9/lab9_soc/synthesis/submodules/lab9_soc_mm_interconnect_0_router.sv|
+Z42 !s90 -reportprogress|300|-sv|-work|lab9_soc|+incdir+/home/tracytang/Documents/ece385/lab9/lab9_soc/synthesis/submodules|/home/tracytang/Documents/ece385/lab9/lab9_soc/synthesis/submodules/lab9_soc_mm_interconnect_0_router.sv|
+!i113 1
+R17
+R18
+R9
+vlab9_soc_mm_interconnect_0_router_001
+R15
+R26
+!i10b 1
+!s100 c>@5MEU07kF@HkDRcPTQ50
+I3]e9;khcmXW^Cn2D[J6FO2
+R2
+Z43 !s105 lab9_soc_mm_interconnect_0_router_001_sv_unit
+S1
+R0
+R11
+Z44 8/home/tracytang/Documents/ece385/lab9/lab9_soc/synthesis/submodules/lab9_soc_mm_interconnect_0_router_001.sv
+Z45 F/home/tracytang/Documents/ece385/lab9/lab9_soc/synthesis/submodules/lab9_soc_mm_interconnect_0_router_001.sv
+R40
+R5
+r1
+!s85 0
+31
+R27
+Z46 !s107 /home/tracytang/Documents/ece385/lab9/lab9_soc/synthesis/submodules/lab9_soc_mm_interconnect_0_router_001.sv|
+Z47 !s90 -reportprogress|300|-sv|-work|lab9_soc|+incdir+/home/tracytang/Documents/ece385/lab9/lab9_soc/synthesis/submodules|/home/tracytang/Documents/ece385/lab9/lab9_soc/synthesis/submodules/lab9_soc_mm_interconnect_0_router_001.sv|
+!i113 1
+R17
+R18
+R9
+vlab9_soc_mm_interconnect_0_router_001_default_decode
+R15
+R26
+!i10b 1
+!s100 7M;UVo@eO=Sm`_MFC0G>S2
+I28iKAz9WkjJR5@g^Q]U1:0
+R2
+R43
+S1
+R0
+R11
+R44
+R45
+Z48 L0 45
+R5
+r1
+!s85 0
+31
+R27
+R46
+R47
+!i113 1
+R17
+R18
+R9
+vlab9_soc_mm_interconnect_0_router_002
+R15
+R26
+!i10b 1
+!s100 iGJaHaIQOPJIiadWP<KIj3
+I<kJUY0QLJkh@RzmkVY0Qd3
+R2
+Z49 !s105 lab9_soc_mm_interconnect_0_router_002_sv_unit
+S1
+R0
+R11
+Z50 8/home/tracytang/Documents/ece385/lab9/lab9_soc/synthesis/submodules/lab9_soc_mm_interconnect_0_router_002.sv
+Z51 F/home/tracytang/Documents/ece385/lab9/lab9_soc/synthesis/submodules/lab9_soc_mm_interconnect_0_router_002.sv
+R40
+R5
+r1
+!s85 0
+31
+R23
+Z52 !s107 /home/tracytang/Documents/ece385/lab9/lab9_soc/synthesis/submodules/lab9_soc_mm_interconnect_0_router_002.sv|
+Z53 !s90 -reportprogress|300|-sv|-work|lab9_soc|+incdir+/home/tracytang/Documents/ece385/lab9/lab9_soc/synthesis/submodules|/home/tracytang/Documents/ece385/lab9/lab9_soc/synthesis/submodules/lab9_soc_mm_interconnect_0_router_002.sv|
+!i113 1
+R17
+R18
+R9
+vlab9_soc_mm_interconnect_0_router_002_default_decode
+R15
+R26
+!i10b 1
+!s100 GD221TS7[iTcZ9XBHA=R53
+IUcbIB6QaA^4C@G9=a@VXe2
+R2
+R49
+S1
+R0
+R11
+R50
+R51
+R48
+R5
+r1
+!s85 0
+31
+R23
+R52
+R53
+!i113 1
+R17
+R18
+R9
+vlab9_soc_mm_interconnect_0_router_004
+R15
+R19
+!i10b 1
+!s100 Oi[`ojRIF=3@]bCGG1obj1
+Ii;n0?A7ckg6SzNkza_2EA1
+R2
+Z54 !s105 lab9_soc_mm_interconnect_0_router_004_sv_unit
+S1
+R0
+R11
+Z55 8/home/tracytang/Documents/ece385/lab9/lab9_soc/synthesis/submodules/lab9_soc_mm_interconnect_0_router_004.sv
+Z56 F/home/tracytang/Documents/ece385/lab9/lab9_soc/synthesis/submodules/lab9_soc_mm_interconnect_0_router_004.sv
+R40
+R5
+r1
+!s85 0
+31
+R23
+Z57 !s107 /home/tracytang/Documents/ece385/lab9/lab9_soc/synthesis/submodules/lab9_soc_mm_interconnect_0_router_004.sv|
+Z58 !s90 -reportprogress|300|-sv|-work|lab9_soc|+incdir+/home/tracytang/Documents/ece385/lab9/lab9_soc/synthesis/submodules|/home/tracytang/Documents/ece385/lab9/lab9_soc/synthesis/submodules/lab9_soc_mm_interconnect_0_router_004.sv|
+!i113 1
+R17
+R18
+R9
+vlab9_soc_mm_interconnect_0_router_004_default_decode
+R15
+R19
+!i10b 1
+!s100 W`ah4mhH_c[HCgYYV7ZTl0
+IPolCS@5JJ5fbL9BiG@A@13
+R2
+R54
+S1
+R0
+R11
+R55
+R56
+R48
+R5
+r1
+!s85 0
+31
+R23
+R57
+R58
+!i113 1
+R17
+R18
+R9
+vlab9_soc_mm_interconnect_0_router_default_decode
+R15
+R26
+!i10b 1
+!s100 >F2VHYhDF:_I1ZLP^EMHK1
+Iz=QhRQ_kaI74V5bUF4Omb3
+R2
+R37
+S1
+R0
+R11
+R38
+R39
+R48
+R5
+r1
+!s85 0
+31
+R27
+R41
+R42
+!i113 1
+R17
+R18
+R9
+vlab9_soc_mm_interconnect_0_rsp_demux
+R15
+R19
+!i10b 1
+!s100 fEbO93O`81zC3Yo]H>61@1
+IT][8@>=:mVieoHMXkGNIX1
+R2
+!s105 lab9_soc_mm_interconnect_0_rsp_demux_sv_unit
+S1
+R0
+R11
+8/home/tracytang/Documents/ece385/lab9/lab9_soc/synthesis/submodules/lab9_soc_mm_interconnect_0_rsp_demux.sv
+F/home/tracytang/Documents/ece385/lab9/lab9_soc/synthesis/submodules/lab9_soc_mm_interconnect_0_rsp_demux.sv
+R35
+R5
+r1
+!s85 0
+31
+R23
+!s107 /home/tracytang/Documents/ece385/lab9/lab9_soc/synthesis/submodules/lab9_soc_mm_interconnect_0_rsp_demux.sv|
+!s90 -reportprogress|300|-sv|-work|lab9_soc|+incdir+/home/tracytang/Documents/ece385/lab9/lab9_soc/synthesis/submodules|/home/tracytang/Documents/ece385/lab9/lab9_soc/synthesis/submodules/lab9_soc_mm_interconnect_0_rsp_demux.sv|
+!i113 1
+R17
+R18
+R9
+vlab9_soc_mm_interconnect_0_rsp_demux_002
+R15
+R19
+!i10b 1
+!s100 ]K<L[4GMTgnPZRUN0`c482
+IN=YzC87hgkJWih97M5RC31
+R2
+!s105 lab9_soc_mm_interconnect_0_rsp_demux_002_sv_unit
+S1
+R0
+R11
+8/home/tracytang/Documents/ece385/lab9/lab9_soc/synthesis/submodules/lab9_soc_mm_interconnect_0_rsp_demux_002.sv
+F/home/tracytang/Documents/ece385/lab9/lab9_soc/synthesis/submodules/lab9_soc_mm_interconnect_0_rsp_demux_002.sv
+R35
+R5
+r1
+!s85 0
+31
+R23
+!s107 /home/tracytang/Documents/ece385/lab9/lab9_soc/synthesis/submodules/lab9_soc_mm_interconnect_0_rsp_demux_002.sv|
+!s90 -reportprogress|300|-sv|-work|lab9_soc|+incdir+/home/tracytang/Documents/ece385/lab9/lab9_soc/synthesis/submodules|/home/tracytang/Documents/ece385/lab9/lab9_soc/synthesis/submodules/lab9_soc_mm_interconnect_0_rsp_demux_002.sv|
+!i113 1
+R17
+R18
+R9
+vlab9_soc_mm_interconnect_0_rsp_mux
+R15
+R19
+!i10b 1
+!s100 QZT5X:<m@fMi`VMGYB4hm2
+ID=WY[InCb?U7mNEWEBQoh3
+R2
+!s105 lab9_soc_mm_interconnect_0_rsp_mux_sv_unit
+S1
+R0
+R11
+8/home/tracytang/Documents/ece385/lab9/lab9_soc/synthesis/submodules/lab9_soc_mm_interconnect_0_rsp_mux.sv
+F/home/tracytang/Documents/ece385/lab9/lab9_soc/synthesis/submodules/lab9_soc_mm_interconnect_0_rsp_mux.sv
+R36
+R5
+r1
+!s85 0
+31
+R23
+!s107 /home/tracytang/Documents/ece385/lab9/lab9_soc/synthesis/submodules/lab9_soc_mm_interconnect_0_rsp_mux.sv|
+!s90 -reportprogress|300|-sv|-work|lab9_soc|+incdir+/home/tracytang/Documents/ece385/lab9/lab9_soc/synthesis/submodules|/home/tracytang/Documents/ece385/lab9/lab9_soc/synthesis/submodules/lab9_soc_mm_interconnect_0_rsp_mux.sv|
+!i113 1
+R17
+R18
+R9
+vlab9_soc_mm_interconnect_0_rsp_mux_001
+R15
+R19
+!i10b 1
+!s100 d2A?eT2gL3kGNMz3Ab:T50
+Ieh;A;czc[8YCL4Fi`UZ1a3
+R2
+!s105 lab9_soc_mm_interconnect_0_rsp_mux_001_sv_unit
+S1
+R0
+R11
+8/home/tracytang/Documents/ece385/lab9/lab9_soc/synthesis/submodules/lab9_soc_mm_interconnect_0_rsp_mux_001.sv
+F/home/tracytang/Documents/ece385/lab9/lab9_soc/synthesis/submodules/lab9_soc_mm_interconnect_0_rsp_mux_001.sv
+R36
+R5
+r1
+!s85 0
+31
+R23
+!s107 /home/tracytang/Documents/ece385/lab9/lab9_soc/synthesis/submodules/lab9_soc_mm_interconnect_0_rsp_mux_001.sv|
+!s90 -reportprogress|300|-sv|-work|lab9_soc|+incdir+/home/tracytang/Documents/ece385/lab9/lab9_soc/synthesis/submodules|/home/tracytang/Documents/ece385/lab9/lab9_soc/synthesis/submodules/lab9_soc_mm_interconnect_0_rsp_mux_001.sv|
+!i113 1
+R17
+R18
+R9
+vlab9_soc_nios2_gen2_0
+R1
+!i10b 1
+!s100 a=JRPj]lJFWbfh3Jn46EA2
+I<N6Nn2eZLN^]j;bUXUFLD0
+R2
+R0
+R30
+8/home/tracytang/Documents/ece385/lab9/lab9_soc/synthesis/submodules/lab9_soc_nios2_gen2_0.v
+F/home/tracytang/Documents/ece385/lab9/lab9_soc/synthesis/submodules/lab9_soc_nios2_gen2_0.v
+L0 9
+R5
+r1
+!s85 0
+31
+R6
+!s107 /home/tracytang/Documents/ece385/lab9/lab9_soc/synthesis/submodules/lab9_soc_nios2_gen2_0.v|
+!s90 -reportprogress|300|-vlog01compat|-work|lab9_soc|+incdir+/home/tracytang/Documents/ece385/lab9/lab9_soc/synthesis/submodules|/home/tracytang/Documents/ece385/lab9/lab9_soc/synthesis/submodules/lab9_soc_nios2_gen2_0.v|
+!i113 1
+R7
+R8
+R9
+vlab9_soc_nios2_gen2_0_cpu
+R10
+!i10b 1
+!s100 n5l];61mdBX_loC0KijRT0
+I5HKj7Bl`icb:K4b0PGh]e0
+R2
+R0
+R3
+Z59 8/home/tracytang/Documents/ece385/lab9/lab9_soc/synthesis/submodules/lab9_soc_nios2_gen2_0_cpu.v
+Z60 F/home/tracytang/Documents/ece385/lab9/lab9_soc/synthesis/submodules/lab9_soc_nios2_gen2_0_cpu.v
+L0 2834
+R5
+r1
+!s85 0
+31
+R13
+Z61 !s107 /home/tracytang/Documents/ece385/lab9/lab9_soc/synthesis/submodules/lab9_soc_nios2_gen2_0_cpu.v|
+Z62 !s90 -reportprogress|300|-vlog01compat|-work|lab9_soc|+incdir+/home/tracytang/Documents/ece385/lab9/lab9_soc/synthesis/submodules|/home/tracytang/Documents/ece385/lab9/lab9_soc/synthesis/submodules/lab9_soc_nios2_gen2_0_cpu.v|
+!i113 1
+R7
+R8
+R9
+vlab9_soc_nios2_gen2_0_cpu_debug_slave_sysclk
+R10
+!i10b 1
+!s100 F?a^4aDdWkSNQQ4m6>n]23
+IOLZPkkAV]W@cIePVL1[Rc0
+R2
+R0
+R3
+8/home/tracytang/Documents/ece385/lab9/lab9_soc/synthesis/submodules/lab9_soc_nios2_gen2_0_cpu_debug_slave_sysclk.v
+F/home/tracytang/Documents/ece385/lab9/lab9_soc/synthesis/submodules/lab9_soc_nios2_gen2_0_cpu_debug_slave_sysclk.v
+R4
+R5
+r1
+!s85 0
+31
+R13
+!s107 /home/tracytang/Documents/ece385/lab9/lab9_soc/synthesis/submodules/lab9_soc_nios2_gen2_0_cpu_debug_slave_sysclk.v|
+!s90 -reportprogress|300|-vlog01compat|-work|lab9_soc|+incdir+/home/tracytang/Documents/ece385/lab9/lab9_soc/synthesis/submodules|/home/tracytang/Documents/ece385/lab9/lab9_soc/synthesis/submodules/lab9_soc_nios2_gen2_0_cpu_debug_slave_sysclk.v|
+!i113 1
+R7
+R8
+R9
+vlab9_soc_nios2_gen2_0_cpu_debug_slave_tck
+R1
+!i10b 1
+!s100 J@8E3Gd:>kc0DZFNVSTd[1
+IEgbnl4d<dbjL<7C_OX9l13
+R2
+R0
+R3
+8/home/tracytang/Documents/ece385/lab9/lab9_soc/synthesis/submodules/lab9_soc_nios2_gen2_0_cpu_debug_slave_tck.v
+F/home/tracytang/Documents/ece385/lab9/lab9_soc/synthesis/submodules/lab9_soc_nios2_gen2_0_cpu_debug_slave_tck.v
+R4
+R5
+r1
+!s85 0
+31
+R6
+!s107 /home/tracytang/Documents/ece385/lab9/lab9_soc/synthesis/submodules/lab9_soc_nios2_gen2_0_cpu_debug_slave_tck.v|
+!s90 -reportprogress|300|-vlog01compat|-work|lab9_soc|+incdir+/home/tracytang/Documents/ece385/lab9/lab9_soc/synthesis/submodules|/home/tracytang/Documents/ece385/lab9/lab9_soc/synthesis/submodules/lab9_soc_nios2_gen2_0_cpu_debug_slave_tck.v|
+!i113 1
+R7
+R8
+R9
+vlab9_soc_nios2_gen2_0_cpu_debug_slave_wrapper
+R10
+!i10b 1
+!s100 P4:n3_Wo9MUIoT8bLG7oW1
+IbELCLWf;I>36H5^_?I^U;0
+R2
+R0
+R3
+8/home/tracytang/Documents/ece385/lab9/lab9_soc/synthesis/submodules/lab9_soc_nios2_gen2_0_cpu_debug_slave_wrapper.v
+F/home/tracytang/Documents/ece385/lab9/lab9_soc/synthesis/submodules/lab9_soc_nios2_gen2_0_cpu_debug_slave_wrapper.v
+R4
+R5
+r1
+!s85 0
+31
+R13
+!s107 /home/tracytang/Documents/ece385/lab9/lab9_soc/synthesis/submodules/lab9_soc_nios2_gen2_0_cpu_debug_slave_wrapper.v|
+!s90 -reportprogress|300|-vlog01compat|-work|lab9_soc|+incdir+/home/tracytang/Documents/ece385/lab9/lab9_soc/synthesis/submodules|/home/tracytang/Documents/ece385/lab9/lab9_soc/synthesis/submodules/lab9_soc_nios2_gen2_0_cpu_debug_slave_wrapper.v|
+!i113 1
+R7
+R8
+R9
+vlab9_soc_nios2_gen2_0_cpu_nios2_avalon_reg
+R10
+!i10b 1
+!s100 ;k9QU?[C^a^kn9lWil8GZ3
+I?^;Rb?F2e@VF9o0zg]@1`1
+R2
+R0
+R3
+R59
+R60
+L0 2023
+R5
+r1
+!s85 0
+31
+R13
+R61
+R62
+!i113 1
+R7
+R8
+R9
+vlab9_soc_nios2_gen2_0_cpu_nios2_oci
+R10
+!i10b 1
+!s100 O4AE8?9S7TM[V?^0U>?oA2
+IMAk88ze4TcMm]CF8_d>M?1
+R2
+R0
+R3
+R59
+R60
+L0 2362
+R5
+r1
+!s85 0
+31
+R13
+R61
+R62
+!i113 1
+R7
+R8
+R9
+vlab9_soc_nios2_gen2_0_cpu_nios2_oci_break
+R10
+!i10b 1
+!s100 _c5_Sfied^UT4c>Bc9KUQ0
+I06g=jmYS;A8DIh[W:[Uem2
+R2
+R0
+R3
+R59
+R60
+L0 295
+R5
+r1
+!s85 0
+31
+R13
+R61
+R62
+!i113 1
+R7
+R8
+R9
+vlab9_soc_nios2_gen2_0_cpu_nios2_oci_compute_input_tm_cnt
+R10
+!i10b 1
+!s100 GCiJjBoKhF`PEfP]48Pbi2
+IbMTm1QB?oH`Y5LH1SZ3Nj0
+R2
+R0
+R3
+R59
+R60
+L0 1265
+R5
+r1
+!s85 0
+31
+R13
+R61
+R62
+!i113 1
+R7
+R8
+R9
+vlab9_soc_nios2_gen2_0_cpu_nios2_oci_dbrk
+R10
+!i10b 1
+!s100 Za`HeD^XUIRJJ<]>O=e=33
+ISU57niS[i<M3@Pm4NRnKC1
+R2
+R0
+R3
+R59
+R60
+L0 795
+R5
+r1
+!s85 0
+31
+R13
+R61
+R62
+!i113 1
+R7
+R8
+R9
+vlab9_soc_nios2_gen2_0_cpu_nios2_oci_debug
+R10
+!i10b 1
+!s100 [9LE1d?>m[oCSh3=fGcnI3
+I?z:>j8lV`Xg[Ozde:8]0l2
+R2
+R0
+R3
+R59
+R60
+L0 153
+R5
+r1
+!s85 0
+31
+R13
+R61
+R62
+!i113 1
+R7
+R8
+R9
+vlab9_soc_nios2_gen2_0_cpu_nios2_oci_dtrace
+R10
+!i10b 1
+!s100 hQo<O;3EY_N=Q6fa32dez2
+IhMmPK_f7^[4bD?_fOKdAm0
+R2
+R0
+R3
+R59
+R60
+L0 1183
+R5
+r1
+!s85 0
+31
+R13
+R61
+R62
+!i113 1
+R7
+R8
+R9
+vlab9_soc_nios2_gen2_0_cpu_nios2_oci_fifo
+R10
+!i10b 1
+!s100 TPz1]D_KXAIIV4:6bl?KO1
+II?5Q>Fc<58H8GKMeR[4_D3
+R2
+R0
+R3
+R59
+R60
+L0 1427
+R5
+r1
+!s85 0
+31
+R13
+R61
+R62
+!i113 1
+R7
+R8
+R9
+vlab9_soc_nios2_gen2_0_cpu_nios2_oci_fifo_cnt_inc
+R10
+!i10b 1
+!s100 6DDhhHF_LR72]gH^2gQK42
+IP6oeEjFV8Sj]VdY0T2o9X1
+R2
+R0
+R3
+R59
+R60
+L0 1380
+R5
+r1
+!s85 0
+31
+R13
+R61
+R62
+!i113 1
+R7
+R8
+R9
+vlab9_soc_nios2_gen2_0_cpu_nios2_oci_fifo_wrptr_inc
+R10
+!i10b 1
+!s100 EIIbamXlR>nLZ_1Uz<mdH0
+IScGWi[YM_73bPQI^QB0ef2
+R2
+R0
+R3
+R59
+R60
+L0 1337
+R5
+r1
+!s85 0
+31
+R13
+R61
+R62
+!i113 1
+R7
+R8
+R9
+vlab9_soc_nios2_gen2_0_cpu_nios2_oci_im
+R10
+!i10b 1
+!s100 _0P[@NIo?PU45O1<o_Td90
+ImhObUcM]gjg`DY3VQVK;m1
+R2
+R0
+R3
+R59
+R60
+L0 1936
+R5
+r1
+!s85 0
+31
+R13
+R61
+R62
+!i113 1
+R7
+R8
+R9
+vlab9_soc_nios2_gen2_0_cpu_nios2_oci_itrace
+R10
+!i10b 1
+!s100 ?W9QzFim^^mfU;1n_52Zd0
+IiHMggj:DT>kmzT;QU2BX_0
+R2
+R0
+R3
+R59
+R60
+L0 982
+R5
+r1
+!s85 0
+31
+R13
+R61
+R62
+!i113 1
+R7
+R8
+R9
+vlab9_soc_nios2_gen2_0_cpu_nios2_oci_pib
+R10
+!i10b 1
+!s100 k1KLN`f^z45@OEaPQPX]31
+IjmPHMonN2Ob7683@<?gz[3
+R2
+R0
+R3
+R59
+R60
+L0 1913
+R5
+r1
+!s85 0
+31
+R13
+R61
+R62
+!i113 1
+R7
+R8
+R9
+vlab9_soc_nios2_gen2_0_cpu_nios2_oci_td_mode
+R10
+!i10b 1
+!s100 6LXVg6<S4CN?EgQc`JN8o0
+I4<Fmgh1lhF_Jj2A6B9LgK0
+R2
+R0
+R3
+R59
+R60
+L0 1115
+R5
+r1
+!s85 0
+31
+R13
+R61
+R62
+!i113 1
+R7
+R8
+R9
+vlab9_soc_nios2_gen2_0_cpu_nios2_oci_xbrk
+R10
+!i10b 1
+!s100 `]4Cezo=HKC924d3nziJi3
+I0X=hUiF`nJNNC6:C@HKXe1
+R2
+R0
+R3
+R59
+R60
+L0 588
+R5
+r1
+!s85 0
+31
+R13
+R61
+R62
+!i113 1
+R7
+R8
+R9
+vlab9_soc_nios2_gen2_0_cpu_nios2_ocimem
+R10
+!i10b 1
+!s100 ZMjjoE?@?4mKLFnMVhXU`3
+IUmNdo]k8VX;imdRHM>Fi>0
+R2
+R0
+R3
+R59
+R60
+L0 2181
+R5
+r1
+!s85 0
+31
+R13
+R61
+R62
+!i113 1
+R7
+R8
+R9
+vlab9_soc_nios2_gen2_0_cpu_nios2_performance_monitors
+R10
+!i10b 1
+!s100 Hj:?W__l`QjDg5zQ;=MLz0
+IF87`<5C4C9g1A<B7B3UP;0
+R2
+R0
+R3
+R59
+R60
+L0 2006
+R5
+r1
+!s85 0
+31
+R13
+R61
+R62
+!i113 1
+R7
+R8
+R9
+vlab9_soc_nios2_gen2_0_cpu_ociram_sp_ram_module
+R10
+!i10b 1
+!s100 g1<?cGeg^M^_K7<mHM<^41
+Ik_IT^?<1`XB9I?RQD651>1
+R2
+R0
+R3
+R59
+R60
+L0 2116
+R5
+r1
+!s85 0
+31
+R13
+R61
+R62
+!i113 1
+R7
+R8
+R9
+vlab9_soc_nios2_gen2_0_cpu_register_bank_a_module
+R10
+!i10b 1
+!s100 [a=]FPb@FJR6finW8aT8Q1
+IA9U_X:^?g:=c:VHOaiYUX2
+R2
+R0
+R3
+R59
+R60
+R4
+R5
+r1
+!s85 0
+31
+R13
+R61
+R62
+!i113 1
+R7
+R8
+R9
+vlab9_soc_nios2_gen2_0_cpu_register_bank_b_module
+R10
+!i10b 1
+!s100 lT;Gi7KNIMAF?aWTZO4l31
+I[bJXQIo>ZWFgVj3iHU@ae2
+R2
+R0
+R3
+R59
+R60
+L0 87
+R5
+r1
+!s85 0
+31
+R13
+R61
+R62
+!i113 1
+R7
+R8
+R9
+vlab9_soc_nios2_gen2_0_cpu_test_bench
+R10
+!i10b 1
+!s100 ahGEG2ne;2m:ao^<]B_9A2
+IQ6TbKj9;T`3G10d9?55OX1
+R2
+R0
+R3
+8/home/tracytang/Documents/ece385/lab9/lab9_soc/synthesis/submodules/lab9_soc_nios2_gen2_0_cpu_test_bench.v
+F/home/tracytang/Documents/ece385/lab9/lab9_soc/synthesis/submodules/lab9_soc_nios2_gen2_0_cpu_test_bench.v
+R4
+R5
+r1
+!s85 0
+31
+R6
+!s107 /home/tracytang/Documents/ece385/lab9/lab9_soc/synthesis/submodules/lab9_soc_nios2_gen2_0_cpu_test_bench.v|
+!s90 -reportprogress|300|-vlog01compat|-work|lab9_soc|+incdir+/home/tracytang/Documents/ece385/lab9/lab9_soc/synthesis/submodules|/home/tracytang/Documents/ece385/lab9/lab9_soc/synthesis/submodules/lab9_soc_nios2_gen2_0_cpu_test_bench.v|
+!i113 1
+R7
+R8
+R9
+vlab9_soc_onchip_memory2_0
+R1
+!i10b 1
+!s100 mc[fAEEk9LZ^Xf9]mXACf1
+IBFJ_>^@?gVP;L>iOVSQf11
+R2
+R0
+Z63 w1585870847
+8/home/tracytang/Documents/ece385/lab9/lab9_soc/synthesis/submodules/lab9_soc_onchip_memory2_0.v
+F/home/tracytang/Documents/ece385/lab9/lab9_soc/synthesis/submodules/lab9_soc_onchip_memory2_0.v
+R4
+R5
+r1
+!s85 0
+31
+R6
+!s107 /home/tracytang/Documents/ece385/lab9/lab9_soc/synthesis/submodules/lab9_soc_onchip_memory2_0.v|
+!s90 -reportprogress|300|-vlog01compat|-work|lab9_soc|+incdir+/home/tracytang/Documents/ece385/lab9/lab9_soc/synthesis/submodules|/home/tracytang/Documents/ece385/lab9/lab9_soc/synthesis/submodules/lab9_soc_onchip_memory2_0.v|
+!i113 1
+R7
+R8
+R9
+vlab9_soc_sdram
+R1
+!i10b 1
+!s100 2hzCSziEEH[[F]?SoM:[c3
+IgKl>_VnZYBFn6DgabFa?O1
+R2
+R0
+R63
+Z64 8/home/tracytang/Documents/ece385/lab9/lab9_soc/synthesis/submodules/lab9_soc_sdram.v
+Z65 F/home/tracytang/Documents/ece385/lab9/lab9_soc/synthesis/submodules/lab9_soc_sdram.v
+L0 159
+R5
+r1
+!s85 0
+31
+R6
+Z66 !s107 /home/tracytang/Documents/ece385/lab9/lab9_soc/synthesis/submodules/lab9_soc_sdram.v|
+Z67 !s90 -reportprogress|300|-vlog01compat|-work|lab9_soc|+incdir+/home/tracytang/Documents/ece385/lab9/lab9_soc/synthesis/submodules|/home/tracytang/Documents/ece385/lab9/lab9_soc/synthesis/submodules/lab9_soc_sdram.v|
+!i113 1
+R7
+R8
+R9
+vlab9_soc_sdram_input_efifo_module
+R1
+!i10b 1
+!s100 k?[^OK7A=fF4]Ld2aRBc42
+IK2nQLMH?WSo:9>[B55jQJ0
+R2
+R0
+R63
+R64
+R65
+R4
+R5
+r1
+!s85 0
+31
+R6
+R66
+R67
+!i113 1
+R7
+R8
+R9
+vlab9_soc_sdram_pll
+R1
+!i10b 1
+!s100 k1e?TIU`9iNGmaZ`FJ68X2
+IdQhKbmZmbf^jiKzDj;0Gg2
+R2
+R0
+Z68 w1585870849
+Z69 8/home/tracytang/Documents/ece385/lab9/lab9_soc/synthesis/submodules/lab9_soc_sdram_pll.v
+Z70 F/home/tracytang/Documents/ece385/lab9/lab9_soc/synthesis/submodules/lab9_soc_sdram_pll.v
+L0 217
+R5
+r1
+!s85 0
+31
+R6
+Z71 !s107 /home/tracytang/Documents/ece385/lab9/lab9_soc/synthesis/submodules/lab9_soc_sdram_pll.v|
+Z72 !s90 -reportprogress|300|-vlog01compat|-work|lab9_soc|+incdir+/home/tracytang/Documents/ece385/lab9/lab9_soc/synthesis/submodules|/home/tracytang/Documents/ece385/lab9/lab9_soc/synthesis/submodules/lab9_soc_sdram_pll.v|
+!i113 1
+R7
+R8
+R9
+vlab9_soc_sdram_pll_altpll_lqa2
+R1
+!i10b 1
+!s100 15SFihDRG94=CMf=ZKbO`0
+IffE^hT0f>L8]5Dc1iK>A_0
+R2
+R0
+R68
+R69
+R70
+L0 130
+R5
+r1
+!s85 0
+31
+R6
+R71
+R72
+!i113 1
+R7
+R8
+R9
+vlab9_soc_sdram_pll_dffpipe_l2c
+R1
+!i10b 1
+!s100 jh6FXUEYoRk6>Bed0M[O31
+Ig:dg^aWc70:;l]Gh3Akh]3
+R2
+R0
+R68
+R69
+R70
+L0 37
+R5
+r1
+!s85 0
+31
+R6
+R71
+R72
+!i113 1
+R7
+R8
+R9
+vlab9_soc_sdram_pll_stdsync_sv6
+R1
+!i10b 1
+!s100 Boa55hDb@o6_bBM8zGEKK1
+ILnOmLbgT_IRe;9Qa9@f<R0
+R2
+R0
+R68
+R69
+R70
+L0 98
+R5
+r1
+!s85 0
+31
+R6
+R71
+R72
+!i113 1
+R7
+R8
+R9
+vlab9_soc_sysid_qsys_0
+R1
+!i10b 1
+!s100 66WZ4Q56KP=IhD<bWlUCO0
+IV<<Y^J]l@NW0gPWhmmf:n3
+R2
+R0
+R68
+8/home/tracytang/Documents/ece385/lab9/lab9_soc/synthesis/submodules/lab9_soc_sysid_qsys_0.v
+F/home/tracytang/Documents/ece385/lab9/lab9_soc/synthesis/submodules/lab9_soc_sysid_qsys_0.v
+R28
+R5
+r1
+!s85 0
+31
+R6
+!s107 /home/tracytang/Documents/ece385/lab9/lab9_soc/synthesis/submodules/lab9_soc_sysid_qsys_0.v|
+!s90 -reportprogress|300|-vlog01compat|-work|lab9_soc|+incdir+/home/tracytang/Documents/ece385/lab9/lab9_soc/synthesis/submodules|/home/tracytang/Documents/ece385/lab9/lab9_soc/synthesis/submodules/lab9_soc_sysid_qsys_0.v|
+!i113 1
+R7
+R8
+R9
+vlab9_soc_timer_0
+R1
+!i10b 1
+!s100 0PKk>>HdfIGbI=]36LD6P0
+II;J>6l5NFRfA_TcBNJhX91
+R2
+R0
+R68
+8/home/tracytang/Documents/ece385/lab9/lab9_soc/synthesis/submodules/lab9_soc_timer_0.v
+F/home/tracytang/Documents/ece385/lab9/lab9_soc/synthesis/submodules/lab9_soc_timer_0.v
+R4
+R5
+r1
+!s85 0
+31
+R6
+!s107 /home/tracytang/Documents/ece385/lab9/lab9_soc/synthesis/submodules/lab9_soc_timer_0.v|
+!s90 -reportprogress|300|-vlog01compat|-work|lab9_soc|+incdir+/home/tracytang/Documents/ece385/lab9/lab9_soc/synthesis/submodules|/home/tracytang/Documents/ece385/lab9/lab9_soc/synthesis/submodules/lab9_soc_timer_0.v|
+!i113 1
+R7
+R8
+R9

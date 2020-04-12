@@ -1,0 +1,289 @@
+/************************************************************************
+Lab 9 Nios Software
+
+Dong Kai Wang, Fall 2017
+Christine Chen, Fall 2013
+
+For use with ECE 385 Experiment 9
+University of Illinois ECE Department
+************************************************************************/
+
+
+#include <stdlib.h>
+#include <stdio.h>
+#include <time.h>
+#include "aes.h"
+// Pointer to base address of AES module, make sure it matches Qsys
+volatile unsigned int * AES_PTR = (unsigned int *) 0x00000180;
+
+// Execution mode: 0 for testing, 1 for benchmarking
+int run_mode = 0;
+void SubWord(unsigned char* msg){
+	for(int i = 0; i < 4; i++){
+		unsigned char upper = (msg[i] & 0xF0)>>4;
+		unsigned char lower = msg[i] & 0x0F;
+		msg[i] = aes_sbox[upper*16 + lower];
+	}
+}
+
+void SubBytes(unsigned char* msg){
+	for(int i = 0; i < 16; i++){
+		unsigned char upper = (msg[i] & 0xF0)>>4;
+		unsigned char lower = msg[i] & 0x0F;
+		msg[i] = aes_sbox[upper*16 + lower];
+	}
+}
+
+void RotWord(unsigned char* keyarr, int i, unsigned char* rot){
+
+
+	rot[0] = keyarr[i+1];
+	rot[1] = keyarr[i+2];
+	rot[2] = keyarr[i+3];
+	rot[3] = keyarr[i];
+}
+
+void KeyExpansion(unsigned char* key, unsigned char* keySchedule){
+	int i = 0;
+	int rconcount = 1;
+	for(i = 1; i < 11; i++){
+		for(int j = 0; j < 4; j++){
+			for(int k = 0; k < 4; k++){
+				unsigned char rot[4];
+				if(j%4 == 0){
+					RotWord(keySchedule, (i * 16) - 4, rot);
+					SubWord(rot);
+					if(k == 0){
+						keySchedule[16*i] = rot[k] ^ keySchedule[16*i - 16] ^ (Rcon[rconcount] >> 24);
+						rconcount++;
+					}
+					else{
+						keySchedule[16*i + 4*j + k] = rot[k] ^ keySchedule[16*i + 4*j + k - 16];
+					}
+				}
+				else{
+					if (k == 0){
+						rot[0] = keySchedule[(i * 16) + (4 * j) - 4];
+						rot[1] = keySchedule[(i * 16) + (4 * j) + 1 - 4];
+						rot[2] = keySchedule[(i * 16) + (4 * j) + 2 - 4];
+						rot[3] = keySchedule[(i * 16) + (4 * j) + 3 - 4];
+					}
+					keySchedule[16*i + 4*j + k] = rot[k] ^ keySchedule[16*i + 4*j + k - 16];
+				}
+			}
+		}
+	}
+}
+
+unsigned char multiply2(unsigned char value){
+	unsigned char temp = value & 0x80;
+	value <<= 1;
+	if(temp){
+		value ^= 0x1b;
+	}
+	return value;
+}
+unsigned char multiply3(unsigned char value){
+	return (value ^ multiply2(value));
+}
+
+void MixColumns(unsigned char* b){
+	unsigned char a[16];
+	for(int i = 0; i < 16; i++){
+		a[i] = b[i];
+	}
+	for(int i = 0; i < 4; i++){
+		b[4 * i] = multiply2(a[4 * i]) ^ multiply3(a[4 * i + 1]) ^ a[4 * i + 2] ^ a[4 * i + 3];
+		b[4 * i + 1] = a[4 * i] ^ multiply2(a[4 * i + 1]) ^ multiply3(a[4 * i + 2]) ^ a[4 * i + 3];
+		b[4 * i + 2] = a[4 * i] ^ a[4 * i + 1] ^ multiply2(a[4 * i + 2]) ^ multiply3(a[4 * i + 3]);
+		b[4 * i + 3] = multiply3(a[4 * i]) ^ a[4 * i + 1] ^ a[4 * i + 2] ^ multiply2(a[4 * i + 3]);
+	}
+}
+
+
+void AddRoundKey(unsigned char* msg, unsigned char* curr_key){
+	for(int i = 0; i < 16; i++){
+		msg[i] ^= curr_key[i];
+	}
+}
+
+void ShiftRows(unsigned char* msg){
+	unsigned char temp1 = msg[1];
+	msg[1] = msg[5];
+	msg[5] = msg[9];
+	msg[9] = msg[13];
+	msg[13] = temp1;
+
+	unsigned char temp2 = msg[2];
+	unsigned char temp6 = msg[6];
+	msg[2] = msg[10];
+	msg[6] = msg[14];
+	msg[10] = temp2;
+	msg[14] = temp6;
+
+	unsigned char temp3 = msg[3];
+	unsigned char temp7 = msg[7];
+	unsigned char temp11 = msg[11];
+	msg[3] = msg[15];
+	msg[7] = temp3;
+	msg[11] = temp7;
+	msg[15] = temp11;
+}
+
+
+
+
+
+char charToHex(char c)
+{
+	char hex = c;
+
+	if (hex >= '0' && hex <= '9')
+		hex -= '0';
+	else if (hex >= 'A' && hex <= 'F')
+	{
+		hex -= 'A';
+		hex += 10;
+	}
+	else if (hex >= 'a' && hex <= 'f')
+	{
+		hex -= 'a';
+		hex += 10;
+	}
+	return hex;
+}
+
+char charsToHex(char c1, char c2)
+{
+	char hex1 = charToHex(c1);
+	char hex2 = charToHex(c2);
+	return (hex1 << 4) + hex2;
+}
+
+void encrypt(unsigned char * msg_ascii, unsigned char * key_ascii, unsigned int * msg_enc, unsigned int * key)
+
+{
+
+	unsigned char KeySchedule[176];
+	unsigned char state[16];
+
+	for(int i = 0; i < 16; i++){
+		state[i] = charsToHex(msg_ascii[2*i], msg_ascii[2*i + 1]);
+	 	KeySchedule[i] = charsToHex(key_ascii[2*i], key_ascii[2*i + 1]);
+   }
+
+	KeyExpansion(key_ascii, KeySchedule);
+
+	AddRoundKey(state, KeySchedule);
+
+	for(int round = 1; round < 10; round++){
+		SubBytes(state);
+		ShiftRows(state);
+		MixColumns(state);
+		AddRoundKey(state, &KeySchedule[round * 16]);
+	}
+	SubBytes(state);
+	ShiftRows(state);
+	AddRoundKey(state, &KeySchedule[160]);
+	for(int i = 0; i < 4; i++){
+		msg_enc[i] = (state[4*i] << 24) + (state[4 * i + 1] << 16) + (state[4 * i + 2] << 8) + state[4 * i + 3];
+		AES_PTR[4+i] = (state[4*i] << 24) + (state[4 * i + 1] << 16) + (state[4 * i + 2] << 8) + state[4 * i + 3];
+		key[i] = (KeySchedule[4 * i] << 24) + (KeySchedule[4 * i + 1] << 16) + (KeySchedule[4 * i + 2] << 8) + KeySchedule[4 * i +3];
+		AES_PTR[i] = (KeySchedule[4 * i] << 24) + (KeySchedule[4 * i + 1] << 16) + (KeySchedule[4 * i + 2] << 8) + KeySchedule[4 * i +3];
+	}
+//	for(int i = 0; i < 4; i++){
+//		printf("%08x", AES_PTR[i]);
+//	}
+//	printf("\n");
+//	for(int i = 0; i < 4; i++){
+//		printf("%08x", key[i]);
+//	}
+}
+
+
+void decrypt(unsigned int * msg_enc, unsigned int * msg_dec, unsigned int * key)
+{
+	for(int i = 0; i < 4; i++){
+		AES_PTR[4 + i] = msg_enc[i];
+		AES_PTR[i] = key[i];
+	}
+
+	AES_PTR[14] = 0x01;
+	AES_PTR[14] = 0x00;
+	while(AES_PTR[15] == 0x00){
+	}
+
+	if(AES_PTR[15] == 0x01){
+		for(int i = 0; i < 4; i++){
+			msg_dec[i] = AES_PTR[i + 8];
+		}
+	}
+}
+
+
+int main()
+{
+	// Input Message and Key as 32x 8-bit ASCII Characters ([33] is for NULL terminator)
+	unsigned char msg_ascii[33];
+	unsigned char key_ascii[33];
+	// Key, Encrypted Message, and Decrypted Message in 4x 32-bit Format to facilitate Read/Write to Hardware
+	unsigned int key[4];
+	unsigned int msg_enc[4];
+	unsigned int msg_dec[4];
+
+	//encrypt(msg_ascii, key_ascii, msg_enc, msg_dec);
+	printf("Select execution mode: 0 for testing, 1 for benchmarking: ");
+	scanf("%d", &run_mode);
+
+	if (run_mode == 0) {
+		// Continuously Perform Encryption and Decryption
+		while (1) {
+			int i = 0;
+			printf("\nEnter Message:\n");
+			scanf("%s", msg_ascii);
+			printf("\n");
+			printf("\nEnter Key:\n");
+			scanf("%s", key_ascii);
+			printf("\n");
+			encrypt(msg_ascii, key_ascii, msg_enc, key);
+			printf("\nEncrpted message is: \n");
+			for(i = 0; i < 4; i++){
+				printf("%08x", msg_enc[i]);
+			}
+			printf("\n");
+			decrypt(msg_enc, msg_dec, key);
+			printf("\nDecrypted message is: \n");
+			for(i = 0; i < 4; i++){
+				printf("%08x", msg_dec[i]);
+			}
+			printf("\n");
+		}
+	}
+	else {
+		// Run the Benchmark
+		int i = 0;
+		int size_KB = 2;
+		// Choose a random Plaintext and Key
+		for (i = 0; i < 32; i++) {
+			msg_ascii[i] = 'a';
+			key_ascii[i] = 'b';
+		}
+		// Run Encryption
+		clock_t begin = clock();
+		for (i = 0; i < size_KB * 64; i++)
+			encrypt(msg_ascii, key_ascii, msg_enc, key);
+		clock_t end = clock();
+		double time_spent = (double)(end - begin) / CLOCKS_PER_SEC;
+		double speed = size_KB / time_spent;
+		printf("Software Encryption Speed: %f KB/s \n", speed);
+		// Run Decryption
+		begin = clock();
+		for (i = 0; i < size_KB * 64; i++)
+			decrypt(msg_enc, msg_dec, key);
+		end = clock();
+		time_spent = (double)(end - begin) / CLOCKS_PER_SEC;
+		speed = size_KB / time_spent;
+		printf("Hardware Encryption Speed: %f KB/s \n", speed);
+	}
+	return 0;
+}
